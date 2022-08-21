@@ -1,10 +1,17 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
+import defaultLanguage from '../assets/i18n/sk.json';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  templateUrl: './app.component.html'
 })
 export class AppComponent {
-  title = 'FancyWeb';
+
+  constructor(private translate: TranslateService) {
+    translate.setTranslation('sk', defaultLanguage);
+    translate.setDefaultLang('sk');
+    translate.currentLang = 'sk';
+  }
+
 }

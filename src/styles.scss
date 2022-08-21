@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+.container {
+    max-width: 1200px;
+}
+
+.section {
+    min-height: 200px;
+    padding-top: 1%;
+    padding-bottom: 3%;
+}
+
+.navbar {
+    padding: 1% 0;
+}
+
+.nav-item {
+    cursor: pointer;
+}
+
+.desktop-only {
+    display: block
+}
+
+.mobile-only {
+    display: none
+}
+
+@media only screen and (max-width: 768px) {
+    .mobile-only {
+        display: block
+    }
+
+    .desktop-only {
+        display: none
+    }
+}

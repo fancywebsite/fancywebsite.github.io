@@ -1,0 +1,13 @@
+{
+  "title": "FancyWeb",
+  "navigation.header": "Home",
+  "navigation.aboutUs": "About us",
+  "navigation.contact": "Contact",
+  "navigation.ourServices": "Our services",
+  "navigation.portfolio": "Portfolio",
+  "header.title": "Fancy web",
+  "aboutUs.title": "About us",
+  "contact.title": "Contact",
+  "ourServices.title": "Our services",
+  "portfolio.title": "Portfolio"
+}

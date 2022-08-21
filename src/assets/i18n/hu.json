@@ -1,0 +1,13 @@
+{
+  "title": "FancyWeb",
+  "navigation.header": "Főoldal",
+  "navigation.aboutUs": "Rólunk",
+  "navigation.contact": "Kontakt",
+  "navigation.ourServices": "Szolgáltatásaink",
+  "navigation.portfolio": "Portfólió",
+  "header.title": "Fancy web",
+  "aboutUs.title": "Rólunk",
+  "contact.title": "Kapcsolat",
+  "ourServices.title": "Szolgáltatásaink",
+  "portfolio.title": "Portfólió"
+}
