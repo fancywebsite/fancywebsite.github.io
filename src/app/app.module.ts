@@ -14,6 +14,7 @@ import { NavigationItemComponent } from './navigation/navigation-item/navigation
 import { NavigationComponent } from './navigation/navigation.component';
 import { OurServicesComponent } from './our-services/our-services.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { MapComponent } from './map/map.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     PortfolioComponent,
     NavigationComponent,
     NavigationItemComponent,
-    SectionComponent
+    SectionComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
