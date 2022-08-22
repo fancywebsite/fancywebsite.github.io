@@ -1,0 +1,13 @@
+{
+  "title": "FancyWeb",
+  "navigation.header": "Domov",
+  "navigation.aboutUs": "O nás",
+  "navigation.contact": "Kontakt",
+  "navigation.ourServices": "Naše služby",
+  "navigation.portfolio": "Portfólio",
+  "header.title": "Fancy web",
+  "aboutUs.title": "O nás",
+  "contact.title": "Kontakt",
+  "ourServices.title": "Naše služby",
+  "portfolio.title": "Portfólio"
+}
