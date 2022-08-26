@@ -9,5 +9,8 @@
   "aboutUs.title": "O nás",
   "contact.title": "Kontakt",
   "ourServices.title": "Naše služby",
-  "portfolio.title": "Portfólio"
+  "portfolio.title": "Portfólio",
+  "cookieMessage": "Táto stránka používa cookies.",
+  "cookieDismiss": "Prijať",
+  "cookieLinkText": "Pravidlá používania cookies"
 }
