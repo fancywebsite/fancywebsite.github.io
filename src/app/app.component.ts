@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { MatIconRegistry } from "@angular/material/icon";
 import defaultLanguage from '../assets/i18n/sk.json';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -8,10 +10,16 @@ import defaultLanguage from '../assets/i18n/sk.json';
 })
 export class AppComponent implements OnInit {
 
-  constructor(private translate: TranslateService) {
+  constructor(private translate: TranslateService,
+              private matIconRegistry: MatIconRegistry,
+              private domSanitizer: DomSanitizer) {
     translate.setTranslation('sk', defaultLanguage);
     translate.setDefaultLang('sk');
     translate.currentLang = 'sk';
+    this.matIconRegistry.addSvgIcon(
+      `fancyweb_logo`,
+      this.domSanitizer.bypassSecurityTrustResourceUrl("assets/icons/logo.svg")
+    );
   }
 
   ngOnInit(): void {

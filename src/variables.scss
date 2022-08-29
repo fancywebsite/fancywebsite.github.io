@@ -1,0 +1,13 @@
+$background-primary: #FFFFFF;
+$background-secondary: #D1E6E4;
+$primary: #D1E6E4;
+$secondary: #31536E;
+$text: black;
+
+:root {
+    --background-primary: #{$background-primary};
+    --background-secondary: #{$background-secondary};
+    --primary: #{$primary};
+    --secondary: #{$secondary};
+    --text: #{$text};
+}

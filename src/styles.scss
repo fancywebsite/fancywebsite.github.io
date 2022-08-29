@@ -1,20 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'variables';
+
+// PAGE
+
+body {
+    background-color: var(--background-primary);
+}
+
 .container {
     max-width: 1200px;
 }
 
 .section {
-    min-height: 200px;
+    min-height: 50vh;
     padding-top: 1%;
     padding-bottom: 3%;
+    text-align: center;
 }
 
-.navbar {
-    padding: 1% 0;
+h1 {
+    font-size: 50px;
+    color: var(--secondary);
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: bold;
 }
 
-.nav-item {
-    cursor: pointer;
+h2 {
+    text-transform: uppercase;
+    font-size: 23px;
+    color: var(--secondary);
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 3%;
+}
+
+p {
+    font-family: 'Merriweather Sans', sans-serif;
+    color: black;
+    text-align: justify;
 }
 
 .desktop-only {
@@ -25,7 +46,116 @@
     display: none
 }
 
-@media only screen and (max-width: 768px) {
+
+// NAVIGATION
+
+.navbar {
+    padding: 1% 0;
+    background: var(--background-secondary);
+    color: var(--secondary);
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.nav-item {
+    cursor: pointer;
+}
+
+// HEADER
+
+#header .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: var(--background-secondary);
+    max-width: unset;
+    padding-top: 0px;
+}
+
+.logo.mat-icon {
+    fill: var(--secondary);
+    width: 70px;
+    height: 70px;
+}
+
+.custom-shape-divider-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(123% + 1.3px);
+    height: 107px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom .shape-fill {
+    fill: var(--background-primary);
+}
+
+// ABOUT US
+
+.mat-card {
+    box-shadow: 0 2px 1px -1px #0003, 0 1px 1px #00000024, 0 1px 3px #0000001f;
+    background-color: var(--primary);
+    max-width: 450px;
+    min-width: 300px;
+    margin: 3% 1%;
+    padding: 7% !important;
+}
+
+.bio {
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.bio-img {
+    width: 120px;
+    height: 120px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    border-radius: 50%;
+    margin: 3%;
+}
+
+// OUR SERVICES
+
+#ourServices .section {
+    padding-top: 3%;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .bio {
+        flex-direction: column;
+        width: unset;
+    }
+
+    .custom-shape-divider-bottom svg {
+        width: calc(123% + 1.3px);
+        height: 36px;
+    }
+
+    .map {
+        width: 100%;
+    }
+
     .mobile-only {
         display: block
     }

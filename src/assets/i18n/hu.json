@@ -5,12 +5,14 @@
   "navigation.contact": "Kontakt",
   "navigation.ourServices": "Szolgáltatásaink",
   "navigation.portfolio": "Portfólió",
-  "header.title": "Fancy web",
+  "header.title": "FancyWeb",
+  "header.subtitle": "Az ön új weboldala",
   "aboutUs.title": "Rólunk",
+  "aboutUs.person1.name": "Krisztian Tóth",
+  "aboutUs.person1.bio": "Text",
+  "aboutUs.person2.name": "Tímea Nagy",
+  "aboutUs.person2.bio": "Text",
   "contact.title": "Kapcsolat",
   "ourServices.title": "Szolgáltatásaink",
-  "portfolio.title": "Portfólió",
-  "cookieMessage": "Ez az oldal sütiket használ.",
-  "cookieDismiss": "Elfogadom",
-  "cookieLinkText": "Cookie tájékoztató"
+  "portfolio.title": "Portfólió"
 }
