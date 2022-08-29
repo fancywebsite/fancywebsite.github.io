@@ -15,6 +15,9 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { OurServicesComponent } from './our-services/our-services.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { MapComponent } from './map/map.component';
+import { MatIconModule } from '@angular/material/icon';
+import {MatCardModule} from '@angular/material/card';
+import { BioComponent } from './about-us/bio/bio.component';
 
 @NgModule({
   declarations: [
@@ -27,11 +30,14 @@ import { MapComponent } from './map/map.component';
     NavigationComponent,
     NavigationItemComponent,
     SectionComponent,
-    MapComponent
+    MapComponent,
+    BioComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MatIconModule,
+    MatCardModule,
     HttpClientModule,
     TranslateModule.forRoot({
       loader: {
