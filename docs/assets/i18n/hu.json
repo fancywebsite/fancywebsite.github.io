@@ -14,5 +14,8 @@
   "aboutUs.person2.bio": "Text",
   "contact.title": "Kapcsolat",
   "ourServices.title": "Szolgáltatásaink",
-  "portfolio.title": "Portfólió"
+  "portfolio.title": "Portfólió",
+  "cookieMessage": "Ez az oldal sütiket használ.",
+  "cookieDismiss": "Elfogadom",
+  "cookieLinkText": "Cookie tájékoztató"
 }
