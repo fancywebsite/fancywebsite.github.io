@@ -3,64 +3,49 @@ import { TranslateService } from '@ngx-translate/core';
 import { MatIconRegistry } from "@angular/material/icon";
 import defaultLanguage from '../assets/i18n/sk.json';
 import { DomSanitizer } from '@angular/platform-browser';
+import { CookieService } from './cookie.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html'
 })
 export class AppComponent implements OnInit {
-  public defaultLang = 'sk';
-  public cc: any;
+  public currentLang = 'sk';
 
-  constructor(private translate: TranslateService,
-              private matIconRegistry: MatIconRegistry,
-              private domSanitizer: DomSanitizer) {
-    translate.setTranslation(this.defaultLang, defaultLanguage);
-    translate.setDefaultLang(this.defaultLang);
-    translate.currentLang = this.defaultLang;
-    this.matIconRegistry.addSvgIcon(
-      `fancyweb_logo`,
-      this.domSanitizer.bypassSecurityTrustResourceUrl("assets/icons/logo.svg")
-    );
-    this.matIconRegistry.addSvgIcon(
-      `sk_flag`,
-      this.domSanitizer.bypassSecurityTrustResourceUrl("assets/icons/sk.svg")
-    );
-    this.matIconRegistry.addSvgIcon(
-      `en_flag`,
-      this.domSanitizer.bypassSecurityTrustResourceUrl("assets/icons/gb.svg")
-    );
-    this.matIconRegistry.addSvgIcon(
-      `hu_flag`,
-      this.domSanitizer.bypassSecurityTrustResourceUrl("assets/icons/hu.svg")
-    );
+  constructor(private translate: TranslateService, private matIconRegistry: MatIconRegistry,
+    private domSanitizer: DomSanitizer, private cookie: CookieService) {
+    // Translate initialization
+    translate.setTranslation(this.currentLang, defaultLanguage);
+    translate.setDefaultLang(this.currentLang);
+    translate.currentLang = this.currentLang;
+    // Icons initialization
+    this.addIconToRegistry('fancyweb_logo', 'assets/icons/logo.svg');
+    this.addIconToRegistry('sk_flag', 'assets/icons/sk.svg');
+    this.addIconToRegistry('en_flag', 'assets/icons/gb.svg');
+    this.addIconToRegistry('hu_flag', 'assets/icons/hu.svg');
   }
 
   ngOnInit(): void {
-    this.cc = window as any;
-    let content = {
-      message: '',
-      dismiss: '',
-      link: '',
-      href: '/'
-    }
-    this.translate.get('cookieMessage').subscribe((event) => content.message = event).unsubscribe();
-    this.translate.get('cookieDismiss').subscribe((event) => content.dismiss = event).unsubscribe();
-    this.translate.get('cookieLinkText').subscribe((event) => content.link = event).unsubscribe();
+    this.cookie.initCookieConsent();
 
-    this.cc.cookieconsent.initialise({
-      palette: {
-        popup: {
-          background: "#164969"
-        },
-        button: {
-          background: "#ffe000",
-          text: "#164969"
-        }
-      },
-      theme: "classic",
-      content
-    });
+    if (this.cookie.getCookie('cookieconsent_status') === 'dismiss') {
+      if (!this.cookie.getCookie('language')) {
+        this.cookie.setCookie({
+          name: 'language',
+          value: this.currentLang,
+          session: true
+        })
+      }
+      let cookieLanguage = this.cookie.getCookie('language')
+      this.translate.use(cookieLanguage);
+      this.currentLang = cookieLanguage;
+    }
   }
 
+  addIconToRegistry(iconName: string, iconPath: string) {
+    this.matIconRegistry.addSvgIcon(
+      iconName,
+      this.domSanitizer.bypassSecurityTrustResourceUrl(iconPath)
+    );
+  }
 }
