@@ -1,9 +1,19 @@
-@import 'variables';
+@use '@angular/material' as mat;
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@include mat.core();
 
-// PAGE
+@import 'variables';
+@import 'styles/about-us.scss';
+@import 'styles/build-your-web.scss';
+@import 'styles/contact.scss';
+@import 'styles/header.scss';
+@import 'styles/how-it-works.scss';
+@import 'styles/navigation.scss';
+@import 'styles/portfolio.scss';
+@import 'styles/product-features.scss';
 
 body {
-    background-color: var(--background-primary);
+    background-color: var(--background-default);
 }
 
 .container {
@@ -12,14 +22,14 @@ body {
 
 .section {
     min-height: 50vh;
-    padding-top: 1%;
-    padding-bottom: 3%;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     text-align: center;
 }
 
 h1 {
     font-size: 50px;
-    color: var(--secondary);
+    color: var(--primary);
     font-family: 'Merriweather Sans', sans-serif;
     font-weight: bold;
 }
@@ -32,11 +42,37 @@ h2 {
     margin-bottom: 3%;
 }
 
-p {
+h3 {
+    margin-top: 7%;
+    font-size: 16px;
+    color: var(--text);
     font-family: 'Merriweather Sans', sans-serif;
-    color: black;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.primary {
+    color: var(--primary);
+}
+
+p, span {
+    font-family: 'Merriweather Sans', sans-serif;
+    color: var(--text);
+    font-size: 16px;
+}
+
+p {
     text-align: justify;
 }
+
+span {
+    text-align: center;
+}
+
+.mt {
+    margin-top: 7%;
+}
+
 
 .desktop-only {
     display: block
@@ -50,155 +86,20 @@ p {
   display: flex;
 }
 
-// NAVIGATION
-
-.navbar {
-    padding: 1% 0;
-    background: var(--background-secondary);
+.mat-raised-button {
+    line-height: 1.5 !important;
+    padding: 10px 30px !important;
     color: var(--secondary);
-    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    border-radius: 35px !important;
 }
 
-.navbar-brand {
-    display: flex;
-    align-items: center;
-    font-family: 'Merriweather Sans', sans-serif;
+button:focus {
+    outline: 0px;
 }
 
-.nav-item {
-    cursor: pointer;
-}
 
-.lang-dropdown {
-  color: var(--secondary) !important;
-  background-color: transparent !important;
-  border-color: transparent !important;
-  padding: 8px;
-}
-
-.btn-secondary.dropdown-toggle:focus {
-  box-shadow: none !important;
-}
-
-.dropdown-menu {
-  min-width: 0 !important;
-}
-
-.dropdown-menu:before{
-  content: "";
-    display: block;
-    font-size: 1px;
-    position: absolute;
-    left: calc(50% - 21.5px);
-    top: -10px;
-    transform: rotate(-45deg);
-    z-index: 50;
-    border-color: transparent;
-    border-style: solid;
-    border-width: 10px;
-    background-color: var(--background-primary);
-    border-top-right-radius: 1px;
-    box-shadow: 0.75em -0.75em rgb(0, 0, 0, 0.25);
-}
-
-.margin-left-10 {
-  margin-left: 10px;
-}
-
-// HEADER
-
-#header .section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    background: var(--background-secondary);
-    max-width: unset;
-    padding-top: 0px;
-}
-
-.logo.mat-icon {
-    fill: var(--secondary);
-    width: 70px;
-    height: 70px;
-}
-
-.custom-shape-divider-bottom {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom svg {
-    position: relative;
-    display: block;
-    width: calc(123% + 1.3px);
-    height: 107px;
-    transform: rotateY(180deg);
-}
-
-.custom-shape-divider-bottom .shape-fill {
-    fill: var(--background-primary);
-}
-
-// ABOUT US
-
-.mat-card {
-    box-shadow: 0 2px 1px -1px #0003, 0 1px 1px #00000024, 0 1px 3px #0000001f;
-    background-color: var(--primary);
-    max-width: 450px;
-    min-width: 450px;
-    margin: 3% 1%;
-    padding: 7% !important;
-
-    & > p {
-      text-align: center;
-    }
-}
-
-.bio {
-    display: inline-flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-evenly;
-}
-
-.bio-img {
-    width: 120px;
-    height: 120px;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    border-radius: 50%;
-    margin: 3%;
-}
-
-// OUR SERVICES
-
-#ourServices .section {
-    padding-top: 3%;
-}
-
-@media only screen and (max-width: 767px) {
-
-    .bio {
-        flex-direction: column;
-        width: unset;
-    }
-
-    .custom-shape-divider-bottom svg {
-        width: calc(123% + 1.3px);
-        height: 36px;
-    }
-
-    .map {
-        width: 100%;
-    }
-
+@media only screen and (max-width: $mobile-resolution) {
     .mobile-only {
         display: block
     }

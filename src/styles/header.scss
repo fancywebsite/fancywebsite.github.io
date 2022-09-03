@@ -1,0 +1,44 @@
+@import '../variables.scss';
+
+#header .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: var(--background-primary);
+    max-width: unset;
+    padding-top: 0px;
+}
+
+.logo.mat-icon {
+    fill: var(--primary);
+    width: 70px;
+    height: 70px;
+}
+
+.custom-shape-divider-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(123% + 1.3px);
+    height: 107px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom .shape-fill {
+    fill: var(--background-default);
+}
+
+@media only screen and (max-width: $mobile-resolution) {
+
+}

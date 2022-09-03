@@ -3,7 +3,8 @@ title;FancyWeb;FancyWeb;FancyWeb
 navigation.header;Domov;Home;Főoldal
 navigation.aboutUs;O nás;About us;Rólunk
 navigation.contact;Kontakt;Contact;Kontakt
-navigation.ourServices;Naše služby;Our services;Szolgáltatásaink
+navigation.productFeatures;O produkte;About the product;A termékről
+navigation.howItWorks;Chcem web;I want a website;Weboldalt szeretnék
 navigation.portfolio;Portfólio;Portfolio;Portfólió
 header.title;FancyWeb;FancyWeb;FancyWeb
 header.subtitle;Vaša nová webová stránka;Your new website;Az ön új weboldala
@@ -11,10 +12,23 @@ aboutUs.title;O nás;About us;Rólunk
 aboutUs.person1.name;Krisztian Tóth;Krisztian Tóth;Krisztian Tóth
 aboutUs.person1.bio;Ja som Krisztian, získal som inžinierský titul na FIIT STU v Bratislave a mám viacročné skúsenosti s vývojom webových aplikácií. Dbám hlavne na rýchlosť, intuitívnosť a estetiku mojích stránok.;My name is Krisztian, I earned my Master's degree in FIIT STU in Bratislava and I have several years of experience in web application development. I aim to create responsive, intuitive and aesthetically pleasing websites.;An én nevem Krisztian, mérnöki diplomámat a pozsonyi műszaki egyetemen szereztem (FIIT STU) és sokéves tapasztalattal rendelkezem internetes aplikációk készítésében. Célom, hogy az általam készített weboldalak minnél gyorsabbak, intuitívabbak, felhasználóbarátabbak és esztétikusabbak legyenek.
 aboutUs.person2.name;Tímea Nagy;Tímea Nagy;Tímea Nagy
-aboutUs.person2.bio;Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.;Text;Text
-contact.title;Kontakt;Contact;Kapcsolat
-ourServices.title;Naše služby;Our services;Szolgáltatásaink
-portfolio.title;Portfólio;Portfolio;Portfólió
+aboutUs.person2.bio;Volám sa Tímea. Vyštudovala som inžiniersky stupeň na FIIT STU v Bratislave v oblasti informatiky. Vývoju webových stránok sa venujem už niekoľko rokov profesionálne, ale aj vo voľnom čase.;My name is Tímea. I graduated with an Master's degree at FIIT STU in Bratislava in the field of computer science. I have been developing websites professionally and also in my spare time for several years.;A nevem Tímea. Mérnöki diplomámat a pozsonyi műszaki egyetemen szereztem (FIIT STU) számítástechnika szakon. Több éve foglalkozom weboldalak fejlesztésével nemcsak professzionálisan, hanem a szabadidőmben is.
+contact.title;Kontaktuj nás;Contact us;Lépj kapcsolatba velünk
+contact.form.name;Meno;Name;Név
+contact.form.email;Email;Email;Email
+contact.form.message;Správa;Message;Üzenet
+contact.form.submitBtn;Poslať správu;Send message;Üzenet küldése
+productFeatures.title;Vlastnosti produktu;Product features;A termék jellemzői
+productFeatures.modern.title;Moderný dizajn;Modern design;Modern dizájn
+productFeatures.modern.text;Pri tvorbe dizajnu sa vždy riadíme súčasnymi trendami.;When creating a design, we always follow current trends.;A tervezés során mindig követjük az aktuális trendeket.
+productFeatures.unique.title;Web na mieru;Custom web;Egyedi weboldal
+productFeatures.unique.text;Vytvoríme web podľa vašich predstáv.;We will create a website according to your wishes.;A kívánságaid szerint elkészítjük a weboldalt.
+productFeatures.responsive.title;Responzívny web;Responsive web;Reszponzív weboldal
+productFeatures.responsive.text;Web sa prispôsobí rôznym zariadeniam ako mobil či tablet.;The website adapts to different devices such as mobile or tablet.;A weboldal alkalmazkodik a különböző eszközökhöz, például mobilhoz vagy tablethez.
+howItWorks.title;Aký je postup?;What is the procedure?;Mi az eljárás?
+buildYourWeb.title;Vytvor si svoj vysnívaný web ešte dnes;Build your dream website today;Készítsd el az álmaid weboldalát még ma
+buildYourWeb.btn;Dohodni si stretnutie;Make an appointment;Kérj időpontot
+portfolio.title;Náhľad našich prác;Preview of our works;Munkáink
 cookieMessage;Táto stránka používa cookies;This website uses cookies.;Ez az oldal sütiket használ.
 cookieDismiss;Prijať;Accept;Elfogadom
 cookieLinkText;Pravidlá používania cookies;Cookie policy;Cookie tájékoztató

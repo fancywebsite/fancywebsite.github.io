@@ -5,7 +5,7 @@ import { Component, Input } from '@angular/core';
   templateUrl: './navigation-item.component.html'
 })
 export class NavigationItemComponent {
-    @Input() public title = '';
+    @Input() title = '';
 
     scroll() {
         const el = document.getElementById(this.title);

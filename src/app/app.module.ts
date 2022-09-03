@@ -12,32 +12,41 @@ import { ContactComponent } from './contact/contact.component';
 import { HeaderComponent } from './header/header.component';
 import { NavigationItemComponent } from './navigation/navigation-item/navigation-item.component';
 import { NavigationComponent } from './navigation/navigation.component';
-import { OurServicesComponent } from './our-services/our-services.component';
+import { ProductFeaturesComponent } from './product-features/product-features.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { MapComponent } from './map/map.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { BioComponent } from './about-us/bio/bio.component';
+import { FeatureComponent } from './product-features/feature/feature.component';
+import { HowItWorksComponent } from './how-it-works/how-it-wors.component';
+import { BuildYourWebComponent } from './build-your-web/build-your-web.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button'
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     AboutUsComponent,
-    OurServicesComponent,
+    ProductFeaturesComponent,
     ContactComponent,
     PortfolioComponent,
     NavigationComponent,
     NavigationItemComponent,
     SectionComponent,
     MapComponent,
-    BioComponent
+    BioComponent,
+    HowItWorksComponent,
+    FeatureComponent,
+    BuildYourWebComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatIconModule,
     MatCardModule,
+    MatButtonModule,
     HttpClientModule,
     TranslateModule.forRoot({
       loader: {
@@ -47,6 +56,7 @@ import { BioComponent } from './about-us/bio/bio.component';
       },
       isolate: false
     }),
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

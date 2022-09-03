@@ -1,12 +1,21 @@
-$background-primary: #FFFFFF;
-$background-secondary: #D1E6E4;
-$primary: #D1E6E4;
-$secondary: #31536E;
-$text: black;
+$background-primary: linear-gradient(90deg, var(--background-primary-1) 0%, var(--background-primary-2) 68%, var(--background-primary-2) 100%);
+$background-secondary: #ffffff;
+$background-default: #fbfbfb;
+$primary: #fbfbfb;
+$secondary: #304597;
+$text: #101732;
+$background-primary-1: rgba(80,115,253);
+$background-primary-1-opacity: rgba(80,115,253, 0.2);
+$background-primary-2: rgba(179,133,253);
+$mobile-resolution: 767px;
 
 :root {
     --background-primary: #{$background-primary};
+    --background-primary-1: #{$background-primary-1};
+    --background-primary-1-opacity: #{$background-primary-1-opacity};
+    --background-primary-2: #{$background-primary-2};
     --background-secondary: #{$background-secondary};
+    --background-default: #{$background-default};
     --primary: #{$primary};
     --secondary: #{$secondary};
     --text: #{$text};

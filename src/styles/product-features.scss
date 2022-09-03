@@ -1,0 +1,17 @@
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.feature-icon {
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+    background-color: var(--background-primary-1-opacity);
+    color: var(--secondary);
+    font-size: 30px;
+    border-radius: 50%;
+}
