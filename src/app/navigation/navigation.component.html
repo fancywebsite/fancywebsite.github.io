@@ -1,45 +1,52 @@
-<nav class="navbar navbar-expand-lg navbar-top navbar-fixed navbar-opaque">
+<nav class="navbar navbar-expand-custom navbar-top navbar-fixed navbar-opaque">
   <div class="container">
+    <div class="navbar-toggler toggler nav-text-color" type="button" data-toggle="collapse" data-target="#primary-menu"
+      aria-controls="primary-menu" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleNav()" id="navbar-toggler"
+      [ngClass]="{close: toClose}">
+      <span></span>
+    </div>
     <a class="navbar-brand">
-      <mat-icon svgIcon="fancyweb_logo"></mat-icon>
-      <span translate="title" class="primary"></span>
+      <mat-icon svgIcon="fancyweb_logo" class="nav-text-color"></mat-icon>
+      <span translate="title" class="nav-text-color"></span>
     </a>
-    <ul class="nav navbar-nav ms-auto nav-no-opacity">
-      <app-navigation-item title="header"></app-navigation-item>
-      <app-navigation-item title="productFeatures"></app-navigation-item>
-      <app-navigation-item title="howItWorks"></app-navigation-item>
-      <app-navigation-item title="portfolio"></app-navigation-item>
-      <app-navigation-item title="aboutUs"></app-navigation-item>
-      <app-navigation-item title="contact"></app-navigation-item>
-      <li>
-        <div class="dropdown show">
-          <a class="btn btn-secondary dropdown-toggle lang-dropdown" href="#" role="button" id="dropdownMenuLink"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            {{ currentLang | uppercase}}
-          </a>
+    <div class="collapse navbar-collapse" id="primary-menu">
+      <ul class="nav navbar-nav ms-auto nav-no-opacity">
+        <app-navigation-item title="header"></app-navigation-item>
+        <app-navigation-item title="productFeatures"></app-navigation-item>
+        <app-navigation-item title="howItWorks"></app-navigation-item>
+        <app-navigation-item title="portfolio"></app-navigation-item>
+        <app-navigation-item title="aboutUs"></app-navigation-item>
+        <app-navigation-item title="contact"></app-navigation-item>
+        <li>
+          <div class="dropdown show nav-item-border">
+            <a class="btn btn-secondary dropdown-toggle lang-dropdown nav-text-color" href="#" role="button"
+              id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {{ currentLang | uppercase}}
+            </a>
 
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" (click)="changeUsedLang('sk')">
-              <div class="flex">
-                <mat-icon svgIcon="sk_flag"></mat-icon>
-                <span class="margin-left-10">SK</span>
-              </div>
-            </a>
-            <a class="dropdown-item" (click)="changeUsedLang('en')">
-              <div class="flex">
-                <mat-icon svgIcon="en_flag"></mat-icon>
-                <span class="margin-left-10">EN</span>
-              </div>
-            </a>
-            <a class="dropdown-item" (click)="changeUsedLang('hu')">
-              <div class="flex">
-                <mat-icon svgIcon="hu_flag"></mat-icon>
-                <span class="margin-left-10">HU</span>
-              </div>
-            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" (click)="changeUsedLang('sk')">
+                <div class="flex">
+                  <mat-icon svgIcon="sk_flag"></mat-icon>
+                  <span class="margin-left-10">SK</span>
+                </div>
+              </a>
+              <a class="dropdown-item" (click)="changeUsedLang('en')">
+                <div class="flex">
+                  <mat-icon svgIcon="en_flag"></mat-icon>
+                  <span class="margin-left-10">EN</span>
+                </div>
+              </a>
+              <a class="dropdown-item" (click)="changeUsedLang('hu')">
+                <div class="flex">
+                  <mat-icon svgIcon="hu_flag"></mat-icon>
+                  <span class="margin-left-10">HU</span>
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
-      </li>
-    </ul>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>

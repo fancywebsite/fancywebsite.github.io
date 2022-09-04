@@ -9,6 +9,8 @@ import { CookieService } from '../cookie.service';
 export class NavigationComponent {
   @Input() public currentLang = '';
 
+  toClose: boolean = false;
+
   constructor(private translate: TranslateService, private cookie: CookieService) { }
 
   changeUsedLang(lang: string) {
@@ -23,6 +25,10 @@ export class NavigationComponent {
         session: true
       })
     }
+  }
+
+  toggleNav() {
+    this.toClose = !this.toClose;
   }
 
 }
