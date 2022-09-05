@@ -1,3 +1,18 @@
 #contact .section {
     background-color: var(--background-secondary);
 }
+
+.form {
+    flex-direction: column;
+    display: flex;
+}
+
+.mat-form-field-label-wrapper {
+    text-align: left;
+}
+
+@media only screen and (max-width: $mobile-resolution) {
+    .submit-btn {
+        padding-bottom: 7%;
+    }
+}

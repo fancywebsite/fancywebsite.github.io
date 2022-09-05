@@ -17,6 +17,9 @@ contact.title;Kontaktuj nás;Contact us;Lépj kapcsolatba velünk
 contact.form.name;Meno;Name;Név
 contact.form.email;Email;Email;Email
 contact.form.message;Správa;Message;Üzenet
+contact.form.name.placeholder;Tvoje meno;Your name;Neved
+contact.form.email.placeholder;Tvoja emailová adresa;Your email address;Email címed
+contact.form.message.placeholder;Správa, ktorú nám chceš poslať;The message you want to send us;Az üzenet, amelyet el szeretnél küldeni nekünk
 contact.form.submitBtn;Poslať správu;Send message;Üzenet küldése
 productFeatures.title;Vlastnosti produktu;Product features;A termék jellemzői
 productFeatures.modern.title;Moderný dizajn;Modern design;Modern dizájn
@@ -29,6 +32,8 @@ howItWorks.title;Aký je postup?;What is the procedure?;Mi az eljárás?
 buildYourWeb.title;Vytvor si svoj vysnívaný web ešte dnes;Build your dream website today;Készítsd el az álmaid weboldalát még ma
 buildYourWeb.btn;Dohodni si stretnutie;Make an appointment;Kérj időpontot
 portfolio.title;Náhľad našich prác;Preview of our works;Munkáink
+footer.text1; © FancyWeb - Design with
+footer.text2;by 
 cookieMessage;Táto stránka používa cookies;This website uses cookies.;Ez az oldal sütiket használ.
 cookieDismiss;Prijať;Accept;Elfogadom
 cookieLinkText;Pravidlá používania cookies;Cookie policy;Cookie tájékoztató

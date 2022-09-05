@@ -17,6 +17,9 @@
   "contact.form.name": "Meno",
   "contact.form.email": "Email",
   "contact.form.message": "Správa",
+  "contact.form.name.placeholder": "Tvoje meno",
+  "contact.form.email.placeholder": "Tvoja emailová adresa",
+  "contact.form.message.placeholder": "Správa, ktorú nám chceš poslať",
   "contact.form.submitBtn": "Poslať správu",
   "productFeatures.title": "Vlastnosti produktu",
   "productFeatures.modern.title": "Moderný dizajn",
@@ -29,6 +32,8 @@
   "buildYourWeb.title": "Vytvor si svoj vysnívaný web ešte dnes",
   "buildYourWeb.btn": "Dohodni si stretnutie",
   "portfolio.title": "Náhľad našich prác",
+  "footer.text1": " © FancyWeb - Design with",
+  "footer.text2": "by ",
   "cookieMessage": "Táto stránka používa cookies",
   "cookieDismiss": "Prijať",
   "cookieLinkText": "Pravidlá používania cookies"

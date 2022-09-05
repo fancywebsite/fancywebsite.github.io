@@ -22,7 +22,11 @@ import { FeatureComponent } from './product-features/feature/feature.component';
 import { HowItWorksComponent } from './how-it-works/how-it-wors.component';
 import { BuildYourWebComponent } from './build-your-web/build-your-web.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule } from '@angular/material/button'
+import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { FooterComponent } from './footer/footer.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -39,15 +43,20 @@ import { MatButtonModule } from '@angular/material/button'
     BioComponent,
     HowItWorksComponent,
     FeatureComponent,
-    BuildYourWebComponent
+    BuildYourWebComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatIconModule,
     MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
     MatButtonModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
