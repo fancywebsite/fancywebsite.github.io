@@ -21,6 +21,8 @@
   "contact.form.email.placeholder": "Tvoja emailová adresa",
   "contact.form.message.placeholder": "Správa, ktorú nám chceš poslať",
   "contact.form.submitBtn": "Poslať správu",
+  "contact.form.required": "Povinné pole",
+  "contact.form.successMsg": "Správa bola úspešne odoslaná!",
   "productFeatures.title": "Vlastnosti produktu",
   "productFeatures.modern.title": "Moderný dizajn",
   "productFeatures.modern.text": "Pri tvorbe dizajnu sa vždy riadíme súčasnymi trendami.",

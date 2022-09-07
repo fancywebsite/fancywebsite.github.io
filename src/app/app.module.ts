@@ -27,6 +27,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SuccessDialogComponent } from './contact/success-dialog/success-dialog.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HowItWorksComponent,
     FeatureComponent,
     BuildYourWebComponent,
-    FooterComponent
+    FooterComponent,
+    SuccessDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -57,6 +60,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    MatDialogModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

@@ -21,6 +21,8 @@
   "contact.form.email.placeholder": "Email címed",
   "contact.form.message.placeholder": "Az üzenet, amelyet el szeretnél küldeni nekünk",
   "contact.form.submitBtn": "Üzenet küldése",
+  "contact.form.required": "Kötelezően kitöltendő mező",
+  "contact.form.successMsg": "Az üzenetet sikeresen elküldtük!",
   "productFeatures.title": "A termék jellemzői",
   "productFeatures.modern.title": "Modern dizájn",
   "productFeatures.modern.text": "A tervezés során mindig követjük az aktuális trendeket.",
