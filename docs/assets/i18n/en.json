@@ -21,6 +21,8 @@
   "contact.form.email.placeholder": "Your email address",
   "contact.form.message.placeholder": "The message you want to send us",
   "contact.form.submitBtn": "Send message",
+  "contact.form.required": "Required field",
+  "contact.form.successMsg": "Message was succesfully sent!",
   "productFeatures.title": "Product features",
   "productFeatures.modern.title": "Modern design",
   "productFeatures.modern.text": "When creating a design, we always follow current trends.",
