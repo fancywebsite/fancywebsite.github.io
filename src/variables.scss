@@ -3,6 +3,7 @@ $background-secondary: #ffffff;
 $background-default: #fbfbfb;
 $primary: #fbfbfb;
 $secondary: #304597;
+$secondary-opacity: rgba(48, 69, 151, 0.3);
 $text: #101732;
 $background-primary-1: rgba(80,115,253);
 $background-primary-1-opacity: rgba(80,115,253, 0.2);
@@ -18,5 +19,6 @@ $mobile-resolution: 1300px;
     --background-default: #{$background-default};
     --primary: #{$primary};
     --secondary: #{$secondary};
+    --secondary-opacity: #{$secondary-opacity};
     --text: #{$text};
 }

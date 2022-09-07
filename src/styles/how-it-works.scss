@@ -1,3 +1,79 @@
 #howItWorks .section {
     background-color: var(--background-secondary);
 }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.how-it-works-page {
+  &::after {
+    content: "";
+    height: 78%;
+    top: 60px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    width: 1px;
+    background-color: var(--secondary-opacity);
+  }
+
+  .works-description-right {
+    text-align: left;
+    float: left;
+    border-radius: 8px;
+    padding: 20px;
+
+    &::after{
+      content: "";
+      transition: all 0.5s ease;
+      border-radius: 50%;
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      top: 25px;
+      z-index: 1;
+      background-color: var(--secondary);
+      left: -8px;
+    }
+
+    & p {
+      text-align: left;
+    }
+  }
+
+  .works-description-left {
+    text-align: right;
+    float: right;
+    border-radius: 8px;
+    padding: 20px;
+
+    &::after {
+      content: "";
+      transition: all 0.5s ease;
+      border-radius: 50%;
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      top: 25px;
+      z-index: 1;
+      background-color: var(--secondary);
+      right: -7px;
+    }
+
+    & p {
+      text-align: right;
+    }
+  }
+}
+
+.align-items-start {
+  align-items: flex-start!important;
+}
+
+.margin-top-0 {
+  margin-top: 0;
+}

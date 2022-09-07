@@ -7,13 +7,13 @@ navigation.productFeatures;O produkte;About the product;A termékről
 navigation.howItWorks;Chcem web;I want a website;Weboldalt szeretnék
 navigation.portfolio;Portfólio;Portfolio;Portfólió
 header.title;FancyWeb;FancyWeb;FancyWeb
-header.subtitle;Vaša nová webová stránka;Your new website;Az ön új weboldala
+header.subtitle;Vaša nová webová stránka;Your new website;Az Ön új weboldala
 aboutUs.title;O nás;About us;Rólunk
 aboutUs.person1.name;Krisztian Tóth;Krisztian Tóth;Krisztian Tóth
 aboutUs.person1.bio;Ja som Krisztian, získal som inžinierský titul na FIIT STU v Bratislave a mám viacročné skúsenosti s vývojom webových aplikácií. Dbám hlavne na rýchlosť, intuitívnosť a estetiku mojích stránok.;My name is Krisztian, I earned my Master's degree in FIIT STU in Bratislava and I have several years of experience in web application development. I aim to create responsive, intuitive and aesthetically pleasing websites.;An én nevem Krisztian, mérnöki diplomámat a pozsonyi műszaki egyetemen szereztem (FIIT STU) és sokéves tapasztalattal rendelkezem internetes aplikációk készítésében. Célom, hogy az általam készített weboldalak minnél gyorsabbak, intuitívabbak, felhasználóbarátabbak és esztétikusabbak legyenek.
 aboutUs.person2.name;Tímea Nagy;Tímea Nagy;Tímea Nagy
 aboutUs.person2.bio;Volám sa Tímea. Vyštudovala som inžiniersky stupeň na FIIT STU v Bratislave v oblasti informatiky. Vývoju webových stránok sa venujem už niekoľko rokov profesionálne, ale aj vo voľnom čase.;My name is Tímea. I graduated with an Master's degree at FIIT STU in Bratislava in the field of computer science. I have been developing websites professionally and also in my spare time for several years.;A nevem Tímea. Mérnöki diplomámat a pozsonyi műszaki egyetemen szereztem (FIIT STU) számítástechnika szakon. Több éve foglalkozom weboldalak fejlesztésével nemcsak professzionálisan, hanem a szabadidőmben is.
-contact.title;Kontaktuj nás;Contact us;Lépj kapcsolatba velünk
+contact.title;Kontaktujte nás;Contact us;Lépjen kapcsolatba velünk
 contact.form.name;Meno;Name;Név
 contact.form.email;Email;Email;Email
 contact.form.message;Správa;Message;Üzenet
@@ -22,12 +22,20 @@ productFeatures.title;Vlastnosti produktu;Product features;A termék jellemzői
 productFeatures.modern.title;Moderný dizajn;Modern design;Modern dizájn
 productFeatures.modern.text;Pri tvorbe dizajnu sa vždy riadíme súčasnymi trendami.;When creating a design, we always follow current trends.;A tervezés során mindig követjük az aktuális trendeket.
 productFeatures.unique.title;Web na mieru;Custom web;Egyedi weboldal
-productFeatures.unique.text;Vytvoríme web podľa vašich predstáv.;We will create a website according to your wishes.;A kívánságaid szerint elkészítjük a weboldalt.
+productFeatures.unique.text;Vytvoríme web podľa Vašich predstáv.;We will create a website according to your wishes.;A kívánságai szerint elkészítjük a weboldalt.
 productFeatures.responsive.title;Responzívny web;Responsive web;Reszponzív weboldal
 productFeatures.responsive.text;Web sa prispôsobí rôznym zariadeniam ako mobil či tablet.;The website adapts to different devices such as mobile or tablet.;A weboldal alkalmazkodik a különböző eszközökhöz, például mobilhoz vagy tablethez.
 howItWorks.title;Aký je postup?;What is the procedure?;Mi az eljárás?
-buildYourWeb.title;Vytvor si svoj vysnívaný web ešte dnes;Build your dream website today;Készítsd el az álmaid weboldalát még ma
-buildYourWeb.btn;Dohodni si stretnutie;Make an appointment;Kérj időpontot
+howItWorks.subTitle1;Povedzte nám Vášu predstavu;Tell us your idea;Mondja el az elképzelését
+howItWorks.subTitle2;My Vám odprezentujeme prototyp;We present you the prototype;Mi elkészítjük a prototípust
+howItWorks.subTitle3;Zapracujeme Vaše pripomienky;We implement your changes;Megvalósítjuk az észrevételeiket
+howItWorks.subTitle4;A nasadíme webstránku;And deploy your website;És telepítjük a weboldalt
+howItWorks.description1;Na spoločnom online stretnutí sa dohodneme o obsahu a dizajnu Vašej webstránky. Oboznámite nás s Vašim biznisom, môžete poskytnúť rôzne podklady ako texty alebo obrázky a spoločne vytvoríme návrh. My Vám ukážeme vzorovú stránku na inšpiráciu, ktorú môžete ľubovoľne meniť a rozširovať.;At a joint online meeting, we will agree on the content and design of your website. You introduce us to your business, you can provide various materials such as texts or images, and together we will create a proposal. We will show you a sample page for inspiration, which you can change and expand at will.;Egy közös online megbeszélésen egyeztetünk weboldala tartalmáról és kialakításáról. Bemutatja nekünk vállalkozását, különféle anyagokat, például szövegeket vagy képeket biztosíthat, és közösen elkészítjük az ajánlatot. Mutatunk egy mintaoldalt inspirációként, amelyet tetszés szerint módosíthat és bővíthet.
+howItWorks.description2;Po zrealizovaní návrhu Vám odprezentujeme prvú funkčnú a kompletnú verziu webstránky. Objasníme prípadné nezrovnalosti s vašou víziou a vytvoríme zoznam posledných úprav a zmien.;After the implementation of the design, we will present you the first functional and complete version of the website. We will clarify any inconsistencies with your vision and create a list of the last modifications and changes.;A terv megvalósítása után bemutatjuk Önnek a weboldal első működőképes és teljes verzióját. Tisztázzuk az elképzelésével kapcsolatos esetleges ellentmondásokat, és listát készítünk a végső módosításokról és változtatásokról.
+howItWorks.description3;Naimplementujeme všetky zmeny na ktorých sme sa dohodli pri prezentácií prototypu, dôkladne otestujeme všetky funkcionality a odskúmame správanie webstránky na zariadeniach s rôznymi veľkosťami obrazoviek.;We will implement all the changes we agreed on during the presentation of the prototype, thoroughly test all functionalities and examine the website's behavior on devices with different screen sizes.;Beprogramozzuk a prototípus bemutatása során megbeszélt változtatásokat, minden funkcionalitást alaposan letesztelünk és megvizsgáljuk a weboldal viselkedését különböző képernyőméretű készülékeken.
+howItWorks.description4;Na záver pripravíme Vašu webstránku na nasadenie a sprístupníme verejnosti.;Finally, we will prepare your website for deployment and make it available to the public.;Végső soron felkészítjük weboldalát a telepítésre, és elérhetővé tesszük a nyilvánosság számára.
+buildYourWeb.title;Vytvorte si svoj vysnívaný web ešte dnes;Build your dream website today;Készítse el az álmai weboldalát még ma
+buildYourWeb.btn;Dohodnite si stretnutie;Make an appointment;Kérjen időpontot
 portfolio.title;Náhľad našich prác;Preview of our works;Munkáink
 cookieMessage;Táto stránka používa cookies;This website uses cookies.;Ez az oldal sütiket használ.
 cookieDismiss;Prijať;Accept;Elfogadom
