@@ -1,13 +1,15 @@
-# FancyWeb - TODO
+# TODO
 
-- prepínanie medzi jazykmi
-- navbar na mobil
 - button na spodku stránky pre scrollovanie hore
-- zistiť prečo sa cookie consent neobjaví po zmazaní local storage
-- prispôsobiť mapu pre mobil
-- sekcia naše služby
-- kontaktný formulár
-- sekcia porfólio
-- texty o nás
+- prefarbiť cookies, odstrániť link a zmeniť text
+- SEO
 - animácie na sekcie
-- premyslieť farby / header, pôsobí to nudne
+- zjednotiť spacing na stránke
+- zmeniť texty - viac marketingu, lepší výstižnejší obsah, niekde treba dlhší text
+- maybe troška refactoring, aby kód bol krajší a jednotnejší
+
+# TODO - do budúcna
+
+- sekcia portfólio (keď budeme mať iné weby, ktoré by sme mohli ukázať)
+- vlastné posielanie emailu
+- pozrieť sa na hostingy (websupport, webhouse)
