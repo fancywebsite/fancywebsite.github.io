@@ -8,11 +8,17 @@
   justify-content: center;
 }
 
+.how-it-works-item {
+  .img-fluid {
+    max-width: 25vw;
+  }
+}
+
 .how-it-works-page {
   &::after {
     content: "";
-    height: 78%;
-    top: 60px;
+    height: 77%;
+    top: 30px;
     left: 0;
     margin: auto;
     position: absolute;
@@ -34,14 +40,10 @@
       width: 15px;
       height: 15px;
       position: absolute;
-      top: 25px;
+      top: 22px;
       z-index: 1;
       background-color: var(--secondary);
       left: -8px;
-    }
-
-    & p {
-      text-align: left;
     }
   }
 
@@ -58,14 +60,10 @@
       width: 15px;
       height: 15px;
       position: absolute;
-      top: 25px;
+      top: 22px;
       z-index: 1;
       background-color: var(--secondary);
       right: -7px;
-    }
-
-    & p {
-      text-align: right;
     }
   }
 }

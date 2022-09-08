@@ -17,6 +17,20 @@
     height: 70px;
 }
 
+.header-title {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding-top: 5%;
+}
+
+.header-img {
+    padding-top: 0 !important;
+    img {
+        max-width: 120%;
+    }
+}
+
 .custom-shape-divider-bottom {
     position: absolute;
     bottom: 0;
@@ -40,7 +54,19 @@
 }
 
 @media only screen and (max-width: $mobile-resolution) {
+
+    #header .section {
+        padding-bottom: 5vh;
+    }
+
     .custom-shape-divider-bottom svg {
         height: 40px;
+    }
+
+    .header-img {
+        padding: 0;
+        img {
+            max-width: 100%;
+        }
     }
 }

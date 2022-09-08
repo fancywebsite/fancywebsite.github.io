@@ -44,7 +44,6 @@ h2 {
 }
 
 h3 {
-    margin-top: 7%;
     font-size: 16px;
     color: var(--text);
     font-family: 'Merriweather Sans', sans-serif;
@@ -107,5 +106,9 @@ button:focus {
 
     .desktop-only {
         display: none
+    }
+
+    h2 {
+        margin-bottom: 10%;
     }
 }

@@ -29,6 +29,7 @@ import { FooterComponent } from './footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SuccessDialogComponent } from './contact/success-dialog/success-dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { ButtonComponent } from './base/button/button.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     FeatureComponent,
     BuildYourWebComponent,
     FooterComponent,
-    SuccessDialogComponent
+    SuccessDialogComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,

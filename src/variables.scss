@@ -2,12 +2,12 @@ $background-primary: linear-gradient(90deg, var(--background-primary-1) 0%, var(
 $background-secondary: #ffffff;
 $background-default: #fbfbfb;
 $primary: #fbfbfb;
-$secondary: #304597;
-$secondary-opacity: rgba(48, 69, 151, 0.3);
-$text: #101732;
-$background-primary-1: rgba(80,115,253);
-$background-primary-1-opacity: rgba(80,115,253, 0.2);
-$background-primary-2: rgba(179,133,253);
+$secondary: #3565c8;
+$text: #0d1932;
+$background-primary-1: rgba(67, 127, 250);
+$background-primary-1-opacity: rgba(67, 127, 250, 0.2);
+$secondary-opacity: $background-primary-1-opacity;
+$background-primary-2: rgba(189, 61, 185);
 $mobile-resolution: 1300px;
 
 :root {

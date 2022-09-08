@@ -1,3 +1,5 @@
+@import '../variables.scss';
+
 .feature {
     display: flex;
     flex-direction: column;
@@ -14,4 +16,10 @@
     color: var(--secondary);
     font-size: 30px;
     border-radius: 50%;
+}
+
+@media only screen and (max-width: $mobile-resolution) {
+    .feature {
+        padding-bottom: 10%;
+    }
 }

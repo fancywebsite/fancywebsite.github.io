@@ -26,27 +26,26 @@ export class ContactComponent {
   }
 
   submit(): void {
-    if (this.formGroup.invalid) {
-      return;
+    if (!this.formGroup.invalid) {
+      Email.send({
+        Host: 'smtp.elasticemail.com',
+        Username: 'fancyweb2022@gmail.com',
+        Password: '42AA5E8B38CAF82922B6CAC136496BC55D68',
+        To: 'fancyweb2022@gmail.com',
+        From: 'fancyweb2022@gmail.com',
+        Subject: 'Contact form',
+        Body: `
+        <b>Správa cez kontaktný formulár</b><br />
+        <br />
+        <b>Meno: </b>${this.formGroup.value.name} <br />
+        <b>Email: </b>${this.formGroup.value.email}<br />
+        <br />
+        <b>Správa:</b>
+        <br /> ${this.formGroup.value.message}</b> `
+      }).then(() => this.dialog.open(SuccessDialogComponent, {
+        panelClass: 'success-dialog'
+      }
+      ));
     }
-    Email.send({
-      Host: 'smtp.elasticemail.com',
-      Username: 'fancyweb2022@gmail.com',
-      Password: '42AA5E8B38CAF82922B6CAC136496BC55D68',
-      To: 'fancyweb2022@gmail.com',
-      From: 'fancyweb2022@gmail.com',
-      Subject: 'Contact form',
-      Body: `
-      <b>Správa cez kontaktný formulár</b><br />
-      <br />
-      <b>Meno: </b>${this.formGroup.value.name} <br />
-      <b>Email: </b>${this.formGroup.value.email}<br />
-      <br />
-      <b>Správa:</b>
-      <br /> ${this.formGroup.value.message}</b> `
-    }).then(() => this.dialog.open(SuccessDialogComponent, {
-      panelClass: 'success-dialog'
-    }
-    ));
   }
 }

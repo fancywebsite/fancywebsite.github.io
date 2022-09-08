@@ -8,6 +8,7 @@ navigation.howItWorks;Chcem web;I want a website;Weboldalt szeretnék
 navigation.portfolio;Portfólio;Portfolio;Portfólió
 header.title;FancyWeb;FancyWeb;FancyWeb
 header.subtitle;Vaša nová webová stránka;Your new website;Az Ön új weboldala
+header.text;Chcete nový web na mieru? Alebo sa vám nepáči dizajn vášho webu a chceli by ste ho prerobiť? My vám to spravíme. Dohodnite si s nami nezáväzné stretnutie, kde sa dozviete viac.;Do you want a new custom website? Or you don't like the design of your website and would like to redesign it? We will do it for you. Make an appointment with us to learn more.;Szeretne egy új egyedi weboldalt? Vagy talán nem tetszik a weboldala dizájnja és szeretné újratervezni? Mi gondoskodunk róla. Lépjen velünk kapcsolatba, hogy többet megtudjon.
 aboutUs.title;O nás;About us;Rólunk
 aboutUs.person1.name;Krisztian Tóth;Krisztian Tóth;Krisztian Tóth
 aboutUs.person1.bio;Ja som Krisztian, získal som inžinierský titul na FIIT STU v Bratislave a mám viacročné skúsenosti s vývojom webových aplikácií. Dbám hlavne na rýchlosť, intuitívnosť a estetiku mojích stránok.;My name is Krisztian, I earned my Master's degree in FIIT STU in Bratislava and I have several years of experience in web application development. I aim to create responsive, intuitive and aesthetically pleasing websites.;An én nevem Krisztian, mérnöki diplomámat a pozsonyi műszaki egyetemen szereztem (FIIT STU) és sokéves tapasztalattal rendelkezem internetes aplikációk készítésében. Célom, hogy az általam készített weboldalak minnél gyorsabbak, intuitívabbak, felhasználóbarátabbak és esztétikusabbak legyenek.
@@ -30,6 +31,12 @@ productFeatures.unique.title;Web na mieru;Custom web;Egyedi weboldal
 productFeatures.unique.text;Vytvoríme web podľa Vašich predstáv.;We will create a website according to your wishes.;A kívánságai szerint elkészítjük a weboldalt.
 productFeatures.responsive.title;Responzívny web;Responsive web;Reszponzív weboldal
 productFeatures.responsive.text;Web sa prispôsobí rôznym zariadeniam ako mobil či tablet.;The website adapts to different devices such as mobile or tablet.;A weboldal alkalmazkodik a különböző eszközökhöz, például mobilhoz vagy tablethez.
+productFeatures.language.title;Podpora pre viac jazykov;Multilanguage support;Több nyelv támogatása
+productFeatures.language.text;Obsah vášho webu môže byť preložený do ľubovoľného počtu jazykov.;Your website content can be translated into any number of languages.;A weboldal tartalma tetszőleges számú nyelvre lefordítható.
+productFeatures.seo.title;Optimalizácia pre vyhľadávače (SEO);Search Engine Optimization (SEO);Keresőoptimalizálás (SEO)
+productFeatures.seo.text;Ponúkame optimalizáciu pre vyhľadávače, ktorá zaručuje, že Vaša stránka sa zobrazí v Googli.;We offer search engine optimization, which guarantees that your site will appear in Google.;Keresőoptimalizálást kínálunk, amely garantálja, hogy webhelye megjelenik a Google-ban.
+productFeatures.price.title;Dobrý pomer cena/kvalita;Good price/quality ratio;Jó ár/minőség arány
+productFeatures.price.text;Prinesieme vám kvalitný produkt za lacnejšie ako naša konkurencia.;We will bring you a quality product for less than our competition.;Minőségi terméket kínálunk Önnek, olcsóbban, mint a versenytársunk.
 howItWorks.title;Aký je postup?;What is the procedure?;Mi az eljárás?
 howItWorks.subTitle1;Povedzte nám Vášu predstavu;Tell us your idea;Mondja el az elképzelését
 howItWorks.subTitle2;My Vám odprezentujeme prototyp;We present you the prototype;Mi elkészítjük a prototípust
@@ -40,10 +47,11 @@ howItWorks.description2;Po zrealizovaní návrhu Vám odprezentujeme prvú funk�
 howItWorks.description3;Naimplementujeme všetky zmeny na ktorých sme sa dohodli pri prezentácií prototypu, dôkladne otestujeme všetky funkcionality a odskúmame správanie webstránky na zariadeniach s rôznymi veľkosťami obrazoviek.;We will implement all the changes we agreed on during the presentation of the prototype, thoroughly test all functionalities and examine the website's behavior on devices with different screen sizes.;Beprogramozzuk a prototípus bemutatása során megbeszélt változtatásokat, minden funkcionalitást alaposan letesztelünk és megvizsgáljuk a weboldal viselkedését különböző képernyőméretű készülékeken.
 howItWorks.description4;Na záver pripravíme Vašu webstránku na nasadenie a sprístupníme verejnosti.;Finally, we will prepare your website for deployment and make it available to the public.;Végső soron felkészítjük weboldalát a telepítésre, és elérhetővé tesszük a nyilvánosság számára.
 buildYourWeb.title;Vytvorte si svoj vysnívaný web ešte dnes;Build your dream website today;Készítse el az álmai weboldalát még ma
-buildYourWeb.btn;Dohodnite si stretnutie;Make an appointment;Kérjen időpontot
+buildYourWeb.btn;Dohodnúť si stretnutie;Make an appointment;Kérjen időpontot
 portfolio.title;Náhľad našich prác;Preview of our works;Munkáink
-footer.text1; © FancyWeb - Design with
-footer.text2;by
+footer.text1; © FancyWeb - Dizajn zo; © FancyWeb - Design with; © FancyWeb - A dizajnt 
+footer.text2;od ; by ; -ből készítette 
+footer.text3;Obrázky navrhol vectorjuice / Freepik;Images designed by vectorjuice / Freepik;A képeket tervezte vectorjuice / Freepik
 cookieMessage;Táto stránka používa cookies;This website uses cookies.;Ez az oldal sütiket használ.
 cookieDismiss;Prijať;Accept;Elfogadom
 cookieLinkText;Pravidlá používania cookies;Cookie policy;Cookie tájékoztató
