@@ -35,7 +35,7 @@
     display: block;
     font-size: 1px;
     position: absolute;
-    left: calc(50% - 21.5px);
+    right: calc(50% - 25px);
     top: -10px;
     transform: rotate(-45deg);
     z-index: 50;
@@ -190,6 +190,7 @@
     content: "";
     left: 39px;
     top: 35px;
+    right: unset;
   }
 }
 
@@ -204,6 +205,7 @@
   }
   .navbar-expand-custom .dropdown-menu {
       position: absolute;
+      left: -50px;
   }
   .navbar-expand-custom .nav-link {
       padding-right: .5rem;
