@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { NgcCookieConsentConfig, NgcCookieConsentService } from 'ngx-cookieconsent';
 
 @Injectable({
   providedIn: 'root'
@@ -7,7 +8,7 @@ import { TranslateService } from '@ngx-translate/core';
 export class CookieService {
   public cc: any;
 
-  constructor(private translate: TranslateService,) { }
+  constructor(private translate: TranslateService, private ccService: NgcCookieConsentService) { }
 
   public getCookie(name: string) {
     let cookieArray: Array<string> = document.cookie.split(';');
@@ -39,29 +40,42 @@ export class CookieService {
   }
 
   public initCookieConsent(): void {
-    this.cc = window as any;
-    let content = {
-      message: '',
-      dismiss: '',
-      link: '',
-      href: '/'
-    }
-    this.translate.get('cookieMessage').subscribe((event) => content.message = event).unsubscribe();
-    this.translate.get('cookieDismiss').subscribe((event) => content.dismiss = event).unsubscribe();
-    this.translate.get('cookieLinkText').subscribe((event) => content.link = event).unsubscribe();
-
-    this.cc.cookieconsent.initialise({
-      palette: {
-        popup: {
-          background: "#164969"
-        },
-        button: {
-          background: "#ffe000",
-          text: "#164969"
+    this.translate
+      .get(['cookieMessage', 'cookieAllow', 'cookieDeny', 'cookiePolicy'])
+      .subscribe(data => {
+        this.ccService.getConfig().content = this.ccService.getConfig().content || {};
+        let content = this.ccService.getConfig().content
+        if (content) {
+          content.message = data['cookieMessage'];
+          content.allow = data['cookieAllow'];
+          content.deny = data['cookieDeny'];
+          content.policy = data['cookiePolicy'];
         }
-      },
-      theme: "classic",
-      content
-    });
+
+        this.ccService.destroy();
+        this.ccService.init(this.ccService.getConfig());
+      });
   }
 }
+
+export const cookieConfig: NgcCookieConsentConfig = {
+  cookie: {
+    domain: 'fancywebsite.github.io'
+  },
+  palette: {
+    popup: {
+      background: '#f9e84a'
+    },
+    button: {
+      background: '#bd3db9'
+    }
+  },
+  theme: 'edgeless',
+  type: 'opt-out',
+  elements:{
+    message: '<span id="cookieconsent:desc" class="cc-message"></span>',
+    messagelink: '<span id="cookieconsent:desc" class="cc-message">{{message}}</span>',
+    allow: '<a aria-label="allow cookies" tabindex="0" class="cc-btn cc-allow cookie-button-allow">{{allow}}</a>',
+    deny: '<a aria-label="deny cookies" tabindex="0" class="cc-btn cc-deny cookie-button-deny">{{deny}}</a>'
+  },
+};

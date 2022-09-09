@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.cookie.initCookieConsent();
 
-    if (this.cookie.getCookie('cookieconsent_status') === 'dismiss') {
+    if (this.cookie.getCookie('cookieconsent_status') === 'allow') {
       if (!this.cookie.getCookie('language')) {
         this.cookie.setCookie({
           name: 'language',

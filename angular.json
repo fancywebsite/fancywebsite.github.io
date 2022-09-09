@@ -29,9 +29,12 @@
             ],
             "styles": [
               "src/styles.scss",
-              "node_modules/ol/ol.css"
+              "node_modules/ol/ol.css",
+              "node_modules/cookieconsent/build/cookieconsent.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/cookieconsent/build/cookieconsent.min.js"
+            ]
           },
           "configurations": {
             "production": {

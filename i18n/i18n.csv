@@ -49,9 +49,10 @@ howItWorks.description4;Na záver pripravíme Vašu webstránku na nasadenie a s
 buildYourWeb.title;Vytvorte si svoj vysnívaný web ešte dnes;Build your dream website today;Készítse el az álmai weboldalát még ma
 buildYourWeb.btn;Dohodnúť si stretnutie;Make an appointment;Kérjen időpontot
 portfolio.title;Náhľad našich prác;Preview of our works;Munkáink
-footer.text1; © FancyWeb - Dizajn zo; © FancyWeb - Design with; © FancyWeb - A dizajnt 
-footer.text2;od ; by ; -ből készítette 
+footer.text1; © FancyWeb - Dizajn zo; © FancyWeb - Design with; © FancyWeb - A dizajnt
+footer.text2;od ; by ; -ből készítette
 footer.text3;Obrázky navrhol vectorjuice / Freepik;Images designed by vectorjuice / Freepik;A képeket tervezte vectorjuice / Freepik
-cookieMessage;Táto stránka používa cookies;This website uses cookies.;Ez az oldal sütiket használ.
-cookieDismiss;Prijať;Accept;Elfogadom
-cookieLinkText;Pravidlá používania cookies;Cookie policy;Cookie tájékoztató
+cookieMessage;Táto stránka používa súbory cookie. Kliknutím na tlačidlo "Povoliť" súhlasíte s ich používaním na uloženie zvoleného jazyka a na anaýzu návštevnosti stránky.;This website uses cookies. By clicking the "Allow" button, you agree to their use to save the selected language and to analyze site traffic.;Ez az oldal sütiket használ. Az "Engedélyezés" gombra kattintva elfogadja, hogy ezeket a kiválasztott nyelv mentésére és a weboldal forgalmának elemzésére használjuk.
+cookieAllow;Povoliť;Allow;Engedélyezem
+cookieDeny;Odmietnuť;Decline;Megtiltom
+cookiePolicy;Zásady používania súborov cookie;Cookie policy;Cookie szabályzat

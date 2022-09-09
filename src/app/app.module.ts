@@ -30,6 +30,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SuccessDialogComponent } from './contact/success-dialog/success-dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ButtonComponent } from './base/button/button.component';
+import { NgcCookieConsentModule } from 'ngx-cookieconsent';
+import { cookieConfig } from './cookie.service';
 
 @NgModule({
   declarations: [
@@ -72,6 +74,7 @@ import { ButtonComponent } from './base/button/button.component';
       isolate: false
     }),
     BrowserAnimationsModule,
+    NgcCookieConsentModule.forRoot(cookieConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]

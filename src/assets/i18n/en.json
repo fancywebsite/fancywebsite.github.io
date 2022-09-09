@@ -52,7 +52,8 @@
   "footer.text1": " © FancyWeb - Design with",
   "footer.text2": " by ",
   "footer.text3": "Images designed by vectorjuice / Freepik",
-  "cookieMessage": "This website uses cookies.",
-  "cookieDismiss": "Accept",
-  "cookieLinkText": "Cookie policy"
+  "cookieMessage": "This website uses cookies. By clicking the \"Allow\" button, you agree to their use to save the selected language and to analyze site traffic.",
+  "cookieAllow": "Allow",
+  "cookieDeny": "Decline",
+  "cookiePolicy": "Cookie policy"
 }
