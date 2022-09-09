@@ -1,12 +1,14 @@
-import { Injectable } from '@angular/core';
+import { Injectable, OnDestroy } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { NgcCookieConsentConfig, NgcCookieConsentService } from 'ngx-cookieconsent';
+import { NgcCookieConsentConfig, NgcCookieConsentService, NgcStatusChangeEvent } from 'ngx-cookieconsent';
+import { Subscription } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
-export class CookieService {
+export class CookieService implements OnDestroy {
   public cc: any;
+  private statusChangeSubscription: Subscription = new Subscription;
 
   constructor(private translate: TranslateService, private ccService: NgcCookieConsentService) { }
 
@@ -55,6 +57,21 @@ export class CookieService {
         this.ccService.destroy();
         this.ccService.init(this.ccService.getConfig());
       });
+
+    this.statusChangeSubscription = this.ccService.statusChange$.subscribe(
+      (event: NgcStatusChangeEvent) => {
+        if (event.status === 'allow') {
+          this.setCookie({
+            name: 'language',
+            value: this.translate.store.currentLang,
+            session: true
+          })
+        }
+      });
+  }
+
+  ngOnDestroy(): void {
+    this.statusChangeSubscription.unsubscribe();
   }
 }
 
@@ -72,7 +89,7 @@ export const cookieConfig: NgcCookieConsentConfig = {
   },
   theme: 'edgeless',
   type: 'opt-out',
-  elements:{
+  elements: {
     message: '<span id="cookieconsent:desc" class="cc-message"></span>',
     messagelink: '<span id="cookieconsent:desc" class="cc-message">{{message}}</span>',
     allow: '<a aria-label="allow cookies" tabindex="0" class="cc-btn cc-allow cookie-button-allow">{{allow}}</a>',

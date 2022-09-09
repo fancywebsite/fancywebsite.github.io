@@ -27,8 +27,6 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.cookie.initCookieConsent();
-
     if (this.cookie.getCookie('cookieconsent_status') === 'allow') {
       if (!this.cookie.getCookie('language')) {
         this.cookie.setCookie({
@@ -41,6 +39,8 @@ export class AppComponent implements OnInit {
       this.translate.use(cookieLanguage);
       this.currentLang = cookieLanguage;
     }
+
+    this.cookie.initCookieConsent();
   }
 
   addIconToRegistry(iconName: string, iconPath: string) {
