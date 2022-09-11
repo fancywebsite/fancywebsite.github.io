@@ -18,8 +18,69 @@
     border-radius: 50%;
 }
 
+.animate-feature {
+    animation-duration: 0.75s;
+    animation-fill-mode: backwards;
+    visibility: visible;
+}
+
+.visibility {
+    visibility: hidden;
+}
+
+.animate-feature.glow {
+    animation-name: animate-glow;
+    animation-timing-function: ease;
+}
+
+@keyframes animate-glow {
+    0% {
+        opacity: 0;
+        filter: brightness(3) saturate(3);
+        transform: scale(0.8, 0.8);
+    }
+
+    100% {
+        opacity: 1;
+        filter: brightness(1) saturate(1);
+        transform: scale(1, 1);
+    }
+}
+
+.delay-1 {
+    animation-delay: 0.2s;
+}
+
+.delay-2 {
+    animation-delay: 0.3s;
+}
+
+.delay-3 {
+    animation-delay: 0.4s;
+}
+
+.delay-4 {
+    animation-delay: 0.5s;
+}
+
+.delay-5 {
+    animation-delay: 0.6s;
+}
+
+.delay-6 {
+    animation-delay: 0.7s;
+}
+
 @media only screen and (max-width: $mobile-resolution) {
     .feature {
         padding-bottom: 10%;
+    }
+
+    // .animate-feature.glow {
+    //     animation: initial;
+    // }
+
+    .delay-1, .delay-2, .delay-3, .delay-4, .delay-5, .delay-6 {
+        animation-delay: 0.2s;
     }
 }

@@ -5,11 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './build-your-web.component.html'
 })
 export class BuildYourWebComponent {
-
-    scroll() {
-        const el = document.getElementById('contact');
-        if (el) {
-            el.scrollIntoView({behavior: 'smooth'});
-        }
-    }
 }

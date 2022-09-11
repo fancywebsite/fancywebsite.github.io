@@ -18,9 +18,9 @@ contact.title;Kontaktujte nás;Contact us;Lépjen kapcsolatba velünk
 contact.form.name;Meno;Name;Név
 contact.form.email;Email;Email;Email
 contact.form.message;Správa;Message;Üzenet
-contact.form.name.placeholder;Vaše meno;Your name;Neve
-contact.form.email.placeholder;Vaša emailová adresa;Your email address;Email címe
-contact.form.message.placeholder;Správa, ktorú nám chcete poslať;The message you want to send us;Az üzenet, amelyet el szeretne küldeni nekünk
+contact.form.name.placeholder;napr. Jožko Mrkvička;e.g. John Smith;pl. Minta János 
+contact.form.email.placeholder;vzor@email.com;example@email.com;minta@email.com
+contact.form.message.placeholder;Chcel by som sa spýtať...;I would like to ask...;Azt szeretném kérdezni...
 contact.form.submitBtn;Poslať správu;Send message;Üzenet küldése
 contact.form.required;Povinné pole;Required field;Kötelezően kitöltendő mező
 contact.form.successMsg;Správa bola úspešne odoslaná!;Message was succesfully sent!;Az üzenetet sikeresen elküldtük!
@@ -35,8 +35,8 @@ productFeatures.language.title;Podpora pre viac jazykov;Multilanguage support;T�
 productFeatures.language.text;Obsah vášho webu môže byť preložený do ľubovoľného počtu jazykov.;Your website content can be translated into any number of languages.;A weboldal tartalma tetszőleges számú nyelvre lefordítható.
 productFeatures.seo.title;Optimalizácia pre vyhľadávače (SEO);Search Engine Optimization (SEO);Keresőoptimalizálás (SEO)
 productFeatures.seo.text;Ponúkame optimalizáciu pre vyhľadávače, ktorá zaručuje, že Vaša stránka sa zobrazí v Googli.;We offer search engine optimization, which guarantees that your site will appear in Google.;Keresőoptimalizálást kínálunk, amely garantálja, hogy webhelye megjelenik a Google-ban.
-productFeatures.price.title;Dobrý pomer cena/kvalita;Good price/quality ratio;Jó ár/minőség arány
-productFeatures.price.text;Prinesieme vám kvalitný produkt za lacnejšie ako naša konkurencia.;We will bring you a quality product for less than our competition.;Minőségi terméket kínálunk Önnek, olcsóbban, mint a versenytársunk.
+productFeatures.analytics.title;Zaznamenanie návštevnosti webu;Web traffic recording;Webes forgalom rögzítése
+productFeatures.analytics.text;Google Analytics je platforma, ktorá zhromažďuje údaje z vašich webových stránok a aplikácií na vytváranie prehľadov, ktoré poskytujú prehľad o vašej firme.;Google Analytics is a platform that collects data from your websites and apps to create reports that provide insights into your business.;A Google Analytics egy olyan platform, amely adatokat gyűjt az Ön webhelyeiről és alkalmazásairól, hogy jelentéseket készítsen, amelyek betekintést nyújtanak az Ön vállalkozásába.
 howItWorks.title;Aký je postup?;What is the procedure?;Mi az eljárás?
 howItWorks.subTitle1;Povedzte nám Vášu predstavu;Tell us your idea;Mondja el az elképzelését
 howItWorks.subTitle2;My Vám odprezentujeme prototyp;We present you the prototype;Mi elkészítjük a prototípust
@@ -50,7 +50,7 @@ buildYourWeb.title;Vytvorte si svoj vysnívaný web ešte dnes;Build your dream 
 buildYourWeb.btn;Dohodnúť si stretnutie;Make an appointment;Kérjen időpontot
 portfolio.title;Náhľad našich prác;Preview of our works;Munkáink
 footer.text1; © FancyWeb - Dizajn zo; © FancyWeb - Design with; © FancyWeb - A dizajnt
-footer.text2;od ; by ; -ből készítette
+footer.text2;vytvoril ; made by ; -ből készítettes
 footer.text3;Obrázky navrhol vectorjuice / Freepik;Images designed by vectorjuice / Freepik;A képeket tervezte vectorjuice / Freepik
 cookieMessage;Táto stránka používa súbory cookie. Kliknutím na tlačidlo "Povoliť" súhlasíte s ich používaním na uloženie zvoleného jazyka a na anaýzu návštevnosti stránky.;This website uses cookies. By clicking the "Allow" button, you agree to their use to save the selected language and to analyze site traffic.;Ez az oldal sütiket használ. Az "Engedélyezem" gombra kattintva elfogadja, hogy ezeket a kiválasztott nyelv mentésére és a weboldal forgalmának elemzésére használjuk.
 cookieAllow;Povoliť;Allow;Engedélyezem

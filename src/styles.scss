@@ -62,7 +62,7 @@ p, span {
 }
 
 p {
-    text-align: justify;
+    text-align: left;
 }
 
 span {
@@ -113,6 +113,21 @@ span {
 
 button:focus {
   outline: 0px;
+}
+
+
+.scrollToTop.mat-mini-fab{
+    position: fixed;
+    background-color: #f9e84a;
+    top: auto;
+    left: auto;
+    right: 30px;
+    bottom: 30px;
+
+    .mat-icon {
+        transform: rotate(90deg);
+        margin-bottom: -7px;
+    }
 }
 
 @media only screen and (max-width: $mobile-resolution) {

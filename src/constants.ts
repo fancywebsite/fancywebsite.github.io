@@ -5,6 +5,6 @@ export const contactInfo: {[key: string]: any} = {
     },
     person2: {
       email: 'nagytimea12@yahoo.com',
-      linkedin: 'https://www.linkedin.com/in/timea-nagy-1816a6211/'
+      linkedin: 'https://www.linkedin.com/in/tímea-nagy-1816a6211/'
     }
   }

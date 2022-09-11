@@ -32,6 +32,9 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { ButtonComponent } from './base/button/button.component';
 import { NgcCookieConsentModule } from 'ngx-cookieconsent';
 import { cookieConfig } from './cookie.service';
+import { GoogleTagManagerModule } from 'angular-google-tag-manager';
+import { environment } from 'src/environments/environment';
+import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +54,8 @@ import { cookieConfig } from './cookie.service';
     BuildYourWebComponent,
     FooterComponent,
     SuccessDialogComponent,
-    ButtonComponent
+    ButtonComponent,
+    ScrollToTopComponent
   ],
   imports: [
     BrowserModule,
@@ -65,6 +69,9 @@ import { cookieConfig } from './cookie.service';
     FormsModule,
     ReactiveFormsModule,
     MatDialogModule,
+    GoogleTagManagerModule.forRoot({
+      id: environment.gtmId,
+    }),
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

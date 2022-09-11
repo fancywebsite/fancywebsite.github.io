@@ -72,6 +72,9 @@ MIT
 @ngx-translate/http-loader
 MIT
 
+angular-google-tag-manager
+MIT
+
 cookieconsent
 MIT
 The MIT License (MIT)

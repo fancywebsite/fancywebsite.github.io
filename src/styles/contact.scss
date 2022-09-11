@@ -8,7 +8,7 @@
 }
 
 .contact-img {
-    max-width: 70%;
+    max-width: 65%;
 }
 
 .contact-row {
@@ -61,5 +61,10 @@
             left: 0% !important;
             margin: 10px;
         }
-      }
+    }
+
+    .contact-img {
+        margin-bottom: 20px;
+        max-width: 70%;
+    }
 }

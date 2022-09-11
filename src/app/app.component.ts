@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { MatIconRegistry } from "@angular/material/icon";
 import defaultLanguage from '../assets/i18n/sk.json';
-import { DomSanitizer } from '@angular/platform-browser';
+import { DomSanitizer, Meta, Title } from '@angular/platform-browser';
 import { CookieService } from './cookie.service';
 
 @Component({
@@ -12,8 +12,12 @@ import { CookieService } from './cookie.service';
 export class AppComponent implements OnInit {
   public currentLang = 'sk';
 
-  constructor(private translate: TranslateService, private matIconRegistry: MatIconRegistry,
-    private domSanitizer: DomSanitizer, private cookie: CookieService) {
+  constructor(private translate: TranslateService,
+    private matIconRegistry: MatIconRegistry,
+    private domSanitizer: DomSanitizer,
+    private cookie: CookieService,
+    private metaTagService: Meta,
+    private titleService: Title) {
     // Translate initialization
     translate.setTranslation(this.currentLang, defaultLanguage);
     translate.setDefaultLang(this.currentLang);
@@ -27,6 +31,12 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.initCookies();
+    this.addMetaTags();
+  }
+
+  initCookies(): void {
+
     if (this.cookie.getCookie('cookieconsent_status') === 'allow') {
       if (!this.cookie.getCookie('language')) {
         this.cookie.setCookie({
@@ -48,5 +58,16 @@ export class AppComponent implements OnInit {
       iconName,
       this.domSanitizer.bypassSecurityTrustResourceUrl(iconPath)
     );
+  }
+
+  addMetaTags(): void {
+    this.titleService.setTitle('Tvorba webových stránok na mieru - FancyWeb');
+    this.metaTagService.addTags([
+      {name: 'description', content: 'Tvorba webových stránok na mieru s responzívnym dizajnom.'},
+      {name: 'keywords', content: 'website design, web development, web na mieru, tvorba web stránok, tvorba web, web stránky, tvorba web stranok'},
+      {name: 'robots', content: 'index, follow'},
+      {name: 'author', content: 'Krisztian Tóth, Tímea Nagy'},
+      {charset: 'UTF-8'},
+    ])
   }
 }
