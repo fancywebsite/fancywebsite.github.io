@@ -8,12 +8,6 @@
   justify-content: center;
 }
 
-.how-it-works-item {
-  .img-fluid {
-    max-width: 25vw;
-  }
-}
-
 .how-it-works-page {
   &::after {
     content: "";
@@ -74,4 +68,72 @@
 
 .margin-top-0 {
   margin-top: 0;
+}
+
+@media only screen and (max-width: $tablet-resolution) {
+  .how-it-works-item .works-description-left::after {
+      left: -7px;
+      top: 25px;
+  }
+
+  .how-it-works-item .works-description-left {
+    text-align: left;
+  }
+
+  .how-it-works-page::after {
+    margin: 0;
+    height: 78%;
+    top: 380px;
+  }
+
+  .how-it-works-page .works-description-right::after {
+    left: -7px;
+  }
+
+  .how-it-works-item {
+    .img-fluid {
+      max-width: 50%;
+    }
+  }
+
+  .container {
+    max-width: 720px !important;
+  }
+}
+
+@media only screen and (max-width: $mobile-resolution) {
+  .how-it-works-page::after {
+    height: 78%;
+    top: calc(360px - ((769px - 100vw) * 0.45));
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .how-it-works-page::after {
+    height: 80%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .how-it-works-page::after {
+    height: 81%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .how-it-works-page::after {
+    height: 83%;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .how-it-works-page::after {
+    height: 82%;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .how-it-works-page::after {
+    height: 83%;
+  }
 }
