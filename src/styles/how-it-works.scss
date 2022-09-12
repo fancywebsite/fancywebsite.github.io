@@ -82,6 +82,10 @@
 
   .how-it-works-item .works-description-left {
     text-align: left;
+
+    p {
+      text-align: left;
+    }
   }
 
   .how-it-works-page::after {
@@ -112,13 +116,20 @@
   }
 }
 
+@media only screen and (max-width: 675px) {
+  .how-it-works-page::after {
+    height: 79%;
+  }
+}
+
 @media only screen and (max-width: 540px) {
   .how-it-works-page::after {
     height: 80%;
   }
 }
 
-@media only screen and (max-width: 425px) {
+
+@media only screen and (max-width: 520px) {
   .how-it-works-page::after {
     height: 81%;
   }
@@ -126,18 +137,24 @@
 
 @media only screen and (max-width: 425px) {
   .how-it-works-page::after {
-    height: 83%;
+    height: 82%;
   }
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 415px) {
   .how-it-works-page::after {
     height: 82%;
   }
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 400px) {
   .how-it-works-page::after {
     height: 83%;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .how-it-works-page::after {
+    height: 84%;
   }
 }
