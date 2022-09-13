@@ -1,69 +1,25 @@
 <app-section id="howItWorks">
-    <h2 translate="howItWorks.title"></h2>
-    <div class="row">
-      <div class="col-lg-10">
-        <div class="how-it-works-page">
-          <div class="how-it-works-item mb-lg-5">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="text-center mb-lg-0">
-                  <img src="assets/images/work1.png" alt="work" class="img-fluid">
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="works-description-right mx-lg-3 mx-4">
-                  <h3 class="mb-2">{{'howItWorks.subTitle1' | translate }}</h3>
-                  <p>{{'howItWorks.description1' | translate }}</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="how-it-works-item mb-5">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="works-description-left mx-lg-3 mx-4">
-                  <h3 class="mb-2">{{'howItWorks.subTitle2' | translate }}</h3>
-                  <p>{{'howItWorks.description2' | translate }}</p>
-                </div>
-              </div>
-              <div class="col-lg-6 order-first order-lg-last">
-                <div class="text-center mb-lg-0">
-                  <img src="assets/images/work2.png" alt="work" class="img-fluid">
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="how-it-works-item mb-5">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="text-center mb-lg-0">
-                  <img src="assets/images/work3.png" alt="work" class="img-fluid">
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="works-description-right mx-lg-3 mx-4">
-                  <h3 class="mb-2">{{'howItWorks.subTitle3' | translate }}</h3>
-                  <p>{{'howItWorks.description3' | translate }}</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="how-it-works-item">
-            <div class="row align-items-start">
-              <div class="col-lg-6">
-                <div class="works-description-left mx-lg-3 mx-4">
-                  <h3 class="mb-2">{{'howItWorks.subTitle4' | translate }}</h3>
-                  <p>{{'howItWorks.description4' | translate }}</p>
-                </div>
-              </div>
-              <div class="col-lg-6 order-first order-lg-last">
-                <div class="text-center mb-lg-0">
-                  <img src="assets/images/work4.png" alt="work" class="img-fluid">
-                </div>
-              </div>
-            </div>
-          </div>
+  <h2 translate="howItWorks.title"></h2>
+  <div class="row">
+    <div class="col-lg-10">
+      <div class="how-it-works-page">
+        <div class="how-it-works-item mb-lg-5">
+          <app-how-it-works-row [rowType]="'left'" [delay]="'how-it-works-delay-1'" [imgSrc]="'assets/images/work1.png'"
+            [subtitle]="'howItWorks.subTitle1'" [description]="'howItWorks.description1'"></app-how-it-works-row>
+        </div>
+        <div class="how-it-works-item mb-5">
+          <app-how-it-works-row [rowType]="'right'" [delay]="'how-it-works-delay-2'" [imgSrc]="'assets/images/work2.png'"
+            [subtitle]="'howItWorks.subTitle2'" [description]="'howItWorks.description2'"></app-how-it-works-row>
+        </div>
+        <div class="how-it-works-item mb-5">
+          <app-how-it-works-row [rowType]="'left'" [delay]="'how-it-works-delay-3'" [imgSrc]="'assets/images/work3.png'"
+            [subtitle]="'howItWorks.subTitle3'" [description]="'howItWorks.description3'"></app-how-it-works-row>
+        </div>
+        <div class="how-it-works-item">
+          <app-how-it-works-row [rowType]="'right'" [delay]="'how-it-works-delay-4'" [imgSrc]="'assets/images/work4.png'"
+            [subtitle]="'howItWorks.subTitle4'" [description]="'howItWorks.description4'" [rowClass]="'align-items-start'"></app-how-it-works-row>
         </div>
       </div>
     </div>
+  </div>
 </app-section>

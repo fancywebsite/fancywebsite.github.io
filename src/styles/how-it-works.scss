@@ -6,6 +6,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 .how-it-works-page {
@@ -64,6 +65,26 @@
       text-align: right;
     }
   }
+
+  .slide-right {
+    left: 850px;
+    transition: 1s;
+  }
+
+  .slide-left {
+    right: 850px;
+    transition: 1s;
+  }
+
+  .slide-from-right {
+    transition: 1s;
+    left: 0;
+  }
+
+  .slide-from-left {
+    transition: 1s;
+    right: 0;
+  }
 }
 
 .align-items-start {
@@ -106,6 +127,10 @@
 
   .container {
     max-width: 720px !important;
+  }
+
+  .row {
+    overflow-x: visible;
   }
 }
 

@@ -5,4 +5,5 @@ import { Component } from '@angular/core';
   templateUrl: './how-it-works.component.html'
 })
 export class HowItWorksComponent {
+
 }

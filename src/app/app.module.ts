@@ -19,7 +19,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { BioComponent } from './about-us/bio/bio.component';
 import { FeatureComponent } from './product-features/feature/feature.component';
-import { HowItWorksComponent } from './how-it-works/how-it-wors.component';
+import { HowItWorksComponent } from './how-it-works/how-it-works.component';
 import { BuildYourWebComponent } from './build-your-web/build-your-web.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
@@ -35,6 +35,7 @@ import { cookieConfig } from './cookie.service';
 import { GoogleTagManagerModule } from 'angular-google-tag-manager';
 import { environment } from 'src/environments/environment';
 import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
+import { HowItWorksRowComponent } from './how-it-works/how-it-works-row/how-it-works-row.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,8 @@ import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
     FooterComponent,
     SuccessDialogComponent,
     ButtonComponent,
-    ScrollToTopComponent
+    ScrollToTopComponent,
+    HowItWorksRowComponent
   ],
   imports: [
     BrowserModule,
