@@ -72,13 +72,13 @@
 }
 
 @media only screen and (max-width: $mobile-resolution) {
+    #productFeatures .row.mb-4 {
+        margin-bottom: 0px !important;
+    }
+
     .feature {
         padding-bottom: 10%;
     }
-
-    // .animate-feature.glow {
-    //     animation: initial;
-    // }
 
     .delay-1, .delay-2, .delay-3, .delay-4, .delay-5, .delay-6 {
         animation-delay: 0.2s;

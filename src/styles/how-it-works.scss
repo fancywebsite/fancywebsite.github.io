@@ -2,7 +2,7 @@
     background-color: var(--background-secondary);
 }
 
-.row {
+#howItWorks .row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -12,7 +12,7 @@
 .how-it-works-page {
   &::after {
     content: "";
-    height: 77%;
+    height: 76%;
     top: 30px;
     left: 0;
     margin: auto;
@@ -27,6 +27,7 @@
     float: left;
     border-radius: 8px;
     padding: 20px;
+    margin: 0px !important;
 
     &::after{
       content: "";
@@ -47,6 +48,7 @@
     float: right;
     border-radius: 8px;
     padding: 20px;
+    margin: 0px !important;
 
     &::after {
       content: "";
@@ -95,9 +97,15 @@
   margin-top: 0;
 }
 
+.how-it-works-item {
+  .img-fluid {
+    max-width: 80%;
+  }
+}
+
 @media only screen and (max-width: $tablet-resolution) {
   .how-it-works-item .works-description-left::after {
-      left: -7px;
+      left: 0px;
       top: 25px;
   }
 
@@ -111,12 +119,13 @@
 
   .how-it-works-page::after {
     margin: 0;
-    height: 78%;
+    height: 100%;
     top: 380px;
+    left: 7px;
   }
 
   .how-it-works-page .works-description-right::after {
-    left: -7px;
+    left: 0px;
   }
 
   .how-it-works-item {
@@ -127,55 +136,12 @@
 
   .container {
     max-width: 720px !important;
+    padding: 0px;
   }
 }
 
 @media only screen and (max-width: $mobile-resolution) {
   .how-it-works-page::after {
-    height: 78%;
-    top: calc(360px - ((769px - 100vw) * 0.45));
-  }
-}
-
-@media only screen and (max-width: 675px) {
-  .how-it-works-page::after {
-    height: 79%;
-  }
-}
-
-@media only screen and (max-width: 540px) {
-  .how-it-works-page::after {
-    height: 80%;
-  }
-}
-
-
-@media only screen and (max-width: 520px) {
-  .how-it-works-page::after {
-    height: 81%;
-  }
-}
-
-@media only screen and (max-width: 425px) {
-  .how-it-works-page::after {
-    height: 82%;
-  }
-}
-
-@media only screen and (max-width: 415px) {
-  .how-it-works-page::after {
-    height: 82%;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .how-it-works-page::after {
-    height: 83%;
-  }
-}
-
-@media only screen and (max-width: 380px) {
-  .how-it-works-page::after {
-    height: 84%;
+    top: calc(370px - ((769px - 100vw) * 0.45));
   }
 }

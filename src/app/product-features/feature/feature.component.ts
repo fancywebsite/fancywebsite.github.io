@@ -1,31 +1,11 @@
-import { Component, ElementRef, HostListener, Input, ViewChild } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { AnimationComponent } from 'src/app/animation.component';
 
 @Component({
   selector: 'app-feature',
   templateUrl: './feature.component.html'
 })
-export class FeatureComponent {
+export class FeatureComponent extends AnimationComponent {
   @Input() feature = '';
   @Input() icon = '';
-  @Input() delay = '';
-  animation = false;
-
-  @HostListener('window:scroll', ['$event'])
-  isScrolledIntoView() {
-    const el = document.getElementById(this.delay);
-    if (el) {
-      const rect = el.getBoundingClientRect();
-      const topShown = rect.top >= 0;
-      const bottomShown = rect.bottom <= window.innerHeight;
-
-      const temp = topShown && bottomShown;
-      if (!this.animation && temp) {
-        this.animation = temp;
-      }
-
-      if (window.scrollY === 0 && this.animation) {
-        this.animation = false;
-      }
-    }
-  }
 }

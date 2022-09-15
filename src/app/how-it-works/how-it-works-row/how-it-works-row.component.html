@@ -8,7 +8,7 @@
     [ngClass]="!animation ? 'slide-right' : 'slide-from-right'">
     <div class="works-description-right mx-lg-3 mx-4">
       <h3 class="mb-2">{{subtitle | translate }}</h3>
-      <p>{{description | translate }}</p>
+      <p [innerHTML]="description | translate"></p>
     </div>
   </div>
 </div>
@@ -17,7 +17,7 @@
   <div [id]="delay" class="col-lg-6" [ngClass]="!animation ? 'slide-left' : 'slide-from-left'">
     <div class="works-description-left mx-lg-3 mx-4">
       <h3 class="mb-2">{{subtitle | translate }}</h3>
-      <p>{{description | translate }}</p>
+      <p [innerHTML]="description | translate"></p>
     </div>
   </div>
   <div [id]="delay" class="col-lg-6 order-first order-lg-last"
