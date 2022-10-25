@@ -1,3 +1,82 @@
+@import '../variables.scss';
+
 #portfolio .section {
-    background-color: var(--background-secondary);
+    background-color: var(--background-default);
+}
+
+.websites {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.web {
+    overflow: hidden;
+    background: var(--background-secondary);
+    border-radius: 30px;
+    box-shadow: 0 10px 20px -5px var(--shadow-color);
+    margin-left: 20px;
+    width: 25vw;
+    cursor: pointer;
+  }
+
+  .webname {
+    h3 {
+        margin-top: 20px;
+    }
+
+  }
+  
+  .screen {
+    background: var(--background-secondary);
+    position: relative;
+    width: 100%;
+  }
+  
+  .screen:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+  
+  .viewport {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: var(--background-secondary);
+  }
+
+  .web .viewport {
+    transition: background-position 6s ease;
+    background-position: 0 0;
+    background-size: 100% auto;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .web:hover .viewport {
+    background-position: 0 100%;
+  }
+  
+  .web .viewport:after {
+    background: radial-gradient(circle at right bottom, transparent 75%, rgba(255, 255, 255, 0.05) 75%, transparent);
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+@media only screen and (max-width: $mobile-resolution) {
+    .web {
+        width: unset;
+        margin-left: 0;
+    }
+
+    app-web {
+      width: 100%;
+    }
 }

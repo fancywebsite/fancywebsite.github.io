@@ -1,15 +1,14 @@
-# TODO
+# UŽITOČNÉ WEBY
 
-- button na spodku stránky pre scrollovanie hore
-- prefarbiť cookies, odstrániť link a zmeniť text
-- SEO
-- animácie na sekcie
-- zjednotiť spacing na stránke
-- zmeniť texty - viac marketingu, lepší výstižnejší obsah, niekde treba dlhší text
-- maybe troška refactoring, aby kód bol krajší a jednotnejší
-
-# TODO - do budúcna
-
-- sekcia portfólio (keď budeme mať iné weby, ktoré by sme mohli ukázať)
-- vlastné posielanie emailu
-- pozrieť sa na hostingy (websupport, webhouse)
+- https://themeforest.net/ - templates
+- https://www.templatemonster.com/ - templates
+- https://www.freepik.com/ - images
+- https://fonts.google.com/ - fonts
+- https://www.angularjswiki.com/angular/angular-material-icons-list-mat-icon-list/ - mat-icons
+- https://color.adobe.com/trends - color trends
+- https://sk.pinterest.com/ - inspiration
+- https://www.canva.com/ - design logos, free images, inspiration
+- https://www.remove.bg/ - remove background from image
+- https://analytics.google.com/analytics/web/ - google analytics
+- https://search.google.com/search-console/about - registrácia web stránky
+- https://www.websupport.sk/ - hosting

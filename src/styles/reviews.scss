@@ -1,0 +1,128 @@
+#reviews .section {
+    background: var(--background-primary);
+
+    h2 {
+        color: var(--background-secondary);
+    }
+}
+
+.reviews {
+    float: left;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.review:last-child {
+    margin: 0;
+}
+
+app-review {
+    width: 450px;
+    display: inline-block;
+}
+
+.reviews::-webkit-scrollbar {
+    display: none;
+}
+  
+.reviews {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.review {
+    border: 1px solid var(--background-default);
+    border-radius: 30px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px -5px var(--shadow-color);
+    background-color: var(--background-secondary);
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--background-default);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    padding: 20px 20px 0px 20px;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: calc(100% - 150px);
+
+    h3, span {
+        margin-bottom: 0;
+        text-align: left;
+        white-space: normal;
+    }
+}
+
+.paragraph {
+    text-align: left;
+    position: relative;
+    min-height: 150px;
+
+    .mat-icon {
+        color: rgba(0,0,0,.03);
+        position: absolute;
+        font-size: 70px;
+        height: 70px;
+        width: 70px;
+        transform: rotate(180deg);
+    }
+
+    p {
+        padding: 35px 20px 20px 20px;
+        margin: 0;
+    }
+}
+
+.stars {
+    color: var(--yellow);
+    .mat-icon {
+        width: 18px;
+        font-size: 18px;
+    }
+}
+
+.logo {
+    img {
+        width: 150px;
+    }
+}
+
+.review-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .mat-icon-button .mat-icon {
+        color: var(--background-secondary);
+    }
+}
+
+@media only screen and (max-width: $mobile-resolution) {
+    .review {
+        width: 80vw;
+    }
+
+    .info {
+        flex-direction: column-reverse;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .name {
+        width: 100%;
+    }
+
+    app-review {
+        width: unset
+    }
+}

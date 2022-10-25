@@ -64,7 +64,7 @@ export class AppComponent implements OnInit {
     this.titleService.setTitle('Tvorba webových stránok na mieru - FancyWeb');
     this.metaTagService.addTags([
       {name: 'description', content: 'Tvorba webových stránok na mieru s responzívnym dizajnom.'},
-      {name: 'keywords', content: 'website design, web development, web na mieru, tvorba web stránok, tvorba web, web stránky, tvorba web stranok'},
+      {name: 'keywords', content: 'website design, web development, web na mieru, tvorba web stránok, tvorba web, web, web stránky, tvorba web stranok'},
       {name: 'robots', content: 'index, follow'},
       {name: 'author', content: 'Krisztian Tóth, Tímea Nagy'},
       {charset: 'UTF-8'},

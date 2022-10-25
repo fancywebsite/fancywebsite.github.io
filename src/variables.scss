@@ -10,6 +10,10 @@ $secondary-opacity: $background-primary-1-opacity;
 $background-primary-2: #bd3db9;
 $mobile-resolution: 769px;
 $tablet-resolution: 992px;
+$shadow-color: rgb(0 0 0 / 10%);
+$yellow: #f9e84a;
+$font-family: 'Raleway', sans-serif;
+$font-family-title: 'Merriweather Sans', sans-serif;
 
 :root {
     --background-primary: #{$background-primary};
@@ -22,4 +26,8 @@ $tablet-resolution: 992px;
     --secondary: #{$secondary};
     --secondary-opacity: #{$secondary-opacity};
     --text: #{$text};
+    --shadow-color: #{$shadow-color};
+    --yellow: #{$yellow};
+    --font-family: #{$font-family};
+    --font-family-title: #{$font-family-title};
 }

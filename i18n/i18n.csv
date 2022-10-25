@@ -5,7 +5,8 @@ navigation.aboutUs;O nás;About us;Rólunk
 navigation.contact;Kontakt;Contact;Kontakt
 navigation.productFeatures;Čo ponúkame;What we offer;Amit ajánlunk
 navigation.howItWorks;Ako získať web;How to get a website;Hogyan szerezzünk weboldalt
-navigation.portfolio;Portfólio;Portfolio;Portfólió
+navigation.portfolio;Naše práce;Our work;Munkáink
+navigation.reviews;Recenzie;Feedback;Vélemények
 header.title;FancyWeb;FancyWeb;FancyWeb
 header.subtitle;Vaša nová webová stránka;Your new website;Az Ön új weboldala
 header.text;Premýšľate o novom webe? Alebo sa Vám nepáči dizajn Vášho webu a chceli by ste ho prerobiť? My Vám s tým pomôžeme. Stačí, ak si s nami dohodnete nezáväzné stretnutie.;Thinking about a new website? Or you don't like the design of your website and would like to redesign it? We will help you with that. Make an appointment with us to learn more.;Új weboldalon gondolkodik? Vagy nem tetszik a weboldala dizájnja és szeretnéd újratervezni? Mi segítünk ebben. Elég, ha megbeszél velünk egy találkozót.
@@ -51,10 +52,15 @@ buildYourWeb.title;Vytvorte si svoj vysnívaný web ešte dnes;Build your dream 
 buildYourWeb.price;už od <strong>200</strong> €;from €200;csak 200 eurótól
 buildYourWeb.btn;Dohodnúť si stretnutie;Make an appointment;Kérjen időpontot
 portfolio.title;Náhľad našich prác;Preview of our works;Munkáink
+portfolio.kvetinarstvo;Kvetinárstvo Eva;Florist Eva;Éva virágüzlete
+reviews.title;Čo o nás povedali naši zákazníci?;What did our customers say about us?;Mit mondtak rólunk az ügyfeleink?
+reviews.kvetinarstvo.text;Text;text;text
+reviews.kvetinarstvo.name;Eva Mészárosová Budaiová;Eva Mészárosová Budaiová;Eva Mészárosová Budaiová 
+reviews.kvetinarstvo.job;Kvetinárka;Florist;Virágárus
 footer.text1; © FancyWeb - Dizajn zo; © FancyWeb - Design with; © FancyWeb - A dizajnt
 footer.text2;vytvoril ; made by ; -ből készítettes
 footer.text3;Obrázky navrhol vectorjuice / Freepik;Images designed by vectorjuice / Freepik;A képeket tervezte vectorjuice / Freepik
-cookieMessage;Táto stránka používa súbory cookie. Kliknutím na tlačidlo "Povoliť" súhlasíte s ich používaním na uloženie zvoleného jazyka a na anaýzu návštevnosti stránky.;This website uses cookies. By clicking the "Allow" button, you agree to their use to save the selected language and to analyze site traffic.;Ez az oldal sütiket használ. Az "Engedélyezem" gombra kattintva elfogadja, hogy ezeket a kiválasztott nyelv mentésére és a weboldal forgalmának elemzésére használjuk.
+cookieMessage;Táto stránka používa súbory cookie. Kliknutím na tlačidlo "Povoliť" súhlasíte s ich používaním na uloženie zvoleného jazyka a na analýzu návštevnosti stránky.;This website uses cookies. By clicking the "Allow" button, you agree to their use to save the selected language and to analyze site traffic.;Ez az oldal sütiket használ. Az "Engedélyezem" gombra kattintva elfogadja, hogy ezeket a kiválasztott nyelv mentésére és a weboldal forgalmának elemzésére használjuk.
 cookieAllow;Povoliť;Allow;Engedélyezem
 cookieDeny;Odmietnuť;Decline;Megtiltom
 cookiePolicy;Zásady používania súborov cookie;Cookie policy;Cookie szabályzat

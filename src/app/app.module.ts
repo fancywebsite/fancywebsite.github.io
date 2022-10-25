@@ -36,6 +36,9 @@ import { GoogleTagManagerModule } from 'angular-google-tag-manager';
 import { environment } from 'src/environments/environment';
 import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
 import { HowItWorksRowComponent } from './how-it-works/how-it-works-row/how-it-works-row.component';
+import { ReviewComponent } from './reviews/review/review.component';
+import { ReviewListComponent } from './reviews/review-list.component';
+import { WebComponent } from './portfolio/web/web.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +60,10 @@ import { HowItWorksRowComponent } from './how-it-works/how-it-works-row/how-it-w
     SuccessDialogComponent,
     ButtonComponent,
     ScrollToTopComponent,
-    HowItWorksRowComponent
+    HowItWorksRowComponent,
+    ReviewComponent,
+    ReviewListComponent,
+    WebComponent
   ],
   imports: [
     BrowserModule,
