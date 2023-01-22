@@ -1,7 +1,7 @@
 @import '../variables.scss';
 
 #portfolio .section {
-    background-color: var(--background-default);
+    background-color: var(--background-secondary);
 }
 
 .websites {
@@ -16,7 +16,6 @@
     border-radius: 30px;
     box-shadow: 0 10px 20px -5px var(--shadow-color);
     margin-left: 20px;
-    width: 25vw;
     cursor: pointer;
   }
 
@@ -69,6 +68,16 @@
     right: 0;
     top: 0;
   }
+
+  app-web {
+    width: 30%;
+  }
+
+@media only screen and (max-width: $tablet-resolution) {
+    app-web {
+      width: 45%;
+    }
+}
 
 @media only screen and (max-width: $mobile-resolution) {
     .web {

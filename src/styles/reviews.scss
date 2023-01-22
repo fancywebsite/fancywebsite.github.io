@@ -12,10 +12,6 @@
     white-space: nowrap;
 }
 
-.review:last-child {
-    margin: 0;
-}
-
 app-review {
     width: 450px;
     display: inline-block;
@@ -64,7 +60,7 @@ app-review {
 .paragraph {
     text-align: left;
     position: relative;
-    min-height: 150px;
+    min-height: 200px;
 
     .mat-icon {
         color: rgba(0,0,0,.03);
@@ -92,7 +88,8 @@ app-review {
 
 .logo {
     img {
-        width: 150px;
+        max-width: 150px;
+        height: 30px;
     }
 }
 
@@ -109,6 +106,7 @@ app-review {
 @media only screen and (max-width: $mobile-resolution) {
     .review {
         width: 80vw;
+        height: 300px;
     }
 
     .info {
@@ -117,6 +115,7 @@ app-review {
 
     .logo {
         margin-bottom: 10px;
+        text-align: left;
     }
 
     .name {

@@ -39,6 +39,7 @@ import { HowItWorksRowComponent } from './how-it-works/how-it-works-row/how-it-w
 import { ReviewComponent } from './reviews/review/review.component';
 import { ReviewListComponent } from './reviews/review-list.component';
 import { WebComponent } from './portfolio/web/web.component';
+import { PricingComponent } from './pricing/princing.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +64,8 @@ import { WebComponent } from './portfolio/web/web.component';
     HowItWorksRowComponent,
     ReviewComponent,
     ReviewListComponent,
-    WebComponent
+    WebComponent,
+    PricingComponent
   ],
   imports: [
     BrowserModule,
