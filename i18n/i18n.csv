@@ -56,16 +56,17 @@ portfolio.title;Náhľad našich prác;Preview of our works;Munkáink
 portfolio.kvetinarstvo;Kvetinárstvo Eva;Florist Eva;Éva virágüzlete
 portfolio.perfect2003;Jazyková škola - Perfect;Language school - Perfect;Nyelviskola - Perfect
 portfolio.klimatel;Klimatel;Klimatel;Klimatel
+portfolio.i-imko;I-Imko Elektroinštalácie;I-Imko Electrical Installation;I-Imko Villanyszerelés
 pricing.title;Cenník;Price list;Árlista
 pricing.web.title;Jednoduchá stránka na mieru;A simple custom site;Egyszerű, egyedi oldal
 pricing.web.subtitle;zahŕňa:;includes:;magába foglalja:
-pricing.web.subtitle.1;vytvorenie dizajnu stránku podľa vašej predstavy;creating a web design according to your idea;oldaldizájn készítése az Ön elképzelése szerint
+pricing.web.subtitle.1;vytvorenie dizajnu stránky podľa vašej predstavy;creating a web design according to your idea;oldaldizájn készítése az Ön elképzelése szerint
 pricing.web.subtitle.2;vytvorenie stránky, ktorá obsahuje navigáciu, hlavičku, pätu a jednu ľubovoľnú sekciu;creating a web that contains navigation, header, footer and one arbitrary section;navigációt, fejlécet, láblécet és egy tetszőleges szakaszt tartalmazó oldal létrehozása
-pricing.web.subtitle.3;nastavenie cookies, sledovania návštevosti a google indexu, aby vás našli vo vyhľadávaní;setting cookies, traffic tracking and google index to find you in search;cookie-k beállítása, forgalomkövetés és google index, hogy megtalálják Önt a keresésben
+pricing.web.subtitle.3;nastavenie cookies, sledovania návštevosti a google indexu, aby Vás našli vo vyhľadávaní;setting cookies, traffic tracking and google index to find you in search;cookie-k beállítása, forgalomkövetés és google index, hogy megtalálják Önt a keresésben
 pricing.web.subtitle.4;prispôsobenie stránky na všetky veľkosti obrazoviek vrátane mobilu a tabletu;adapting the web to all screen sizes, including mobile and tablet;a web igazítása minden képernyőmérethez, beleértve a mobilt és a táblagépet is
-pricing.section.title;Sekcia alebo podstránka;Section or subpage;Szakasz vagy aloldal
-pricing.section.subtitle;napríklad sekcie o nás, naše služby, kontakt, ...;for example sections about us, our services, contact, ...;például rólunk, szolgáltatásainkról, elérhetőségeinkről, ...
-pricing.complex.title;Komplexná sekcia alebo podstránka;Complex section or subpage;Összetett szakasz vagy aloldal
+pricing.section.title;Každá ďalšia sekcia alebo podstránka;Each additional section or subpage;Minden további szakasz vagy aloldal
+pricing.section.subtitle;napríklad sekcie o nás, naše služby, kontakt, čokoľvek, čo si vymyslíte;for example sections about us, our services, contact, anything you can think of;például rólunk, szolgáltatásainkról, elérhetőségeinkről, bármit, ami az eszébe jut
+pricing.complex.title;Každá ďalšia komplexná sekcia alebo podstránka;Each additional complex section or subpage;Minden további összetett szakasz vagy aloldal
 pricing.complex.subtitle;napríklad fotogaléria;for example, a photo gallery;például egy fotógaléria
 pricing.multilanguage.title;Podpora pre viacero jazykov;Support for multiple languages;Több nyelv támogatása
 pricing.multilanguage.subtitle;môžete si pridať ľubovoľný počet jazykov, preklady však musíte dodať vy;you can add as many languages as you like, but you have to supply the translations;tetszőleges számú nyelvet hozzáadhat, de a fordításokat Önnek kell biztosítania
