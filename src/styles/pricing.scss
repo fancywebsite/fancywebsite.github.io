@@ -37,6 +37,15 @@
     }
 }
 
+.tax {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .mat-icon {
+        margin-right: 5px;
+    }
+}
+
 @media only screen and (max-width: $tablet-resolution){
     .price-list {
         max-width: 100%;
