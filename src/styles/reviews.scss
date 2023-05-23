@@ -61,6 +61,7 @@ app-review {
     text-align: left;
     position: relative;
     min-height: 200px;
+    padding: 35px 20px 20px 20px;
 
     .mat-icon {
         color: rgba(0,0,0,.03);
@@ -71,10 +72,14 @@ app-review {
         transform: rotate(180deg);
     }
 
-    p {
-        padding: 35px 20px 20px 20px;
+    span {
         margin: 0;
         white-space: break-spaces;
+    }
+
+    .showMore {
+        color: var(--secondary);
+        cursor: pointer;
     }
 }
 
@@ -107,6 +112,11 @@ app-review {
     .review {
         width: 80vw;
         height: 400px;
+    }
+
+    .paragraph {
+        overflow: scroll;
+        max-height: 300px;
     }
 
     .info {

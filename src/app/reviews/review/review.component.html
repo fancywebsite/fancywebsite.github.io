@@ -13,6 +13,8 @@
     </div>
     <div class="paragraph">
         <mat-icon>format_quote</mat-icon>
-        <p>{{'reviews.' + id + '.text' | translate}}</p>
+        <span [innerHTML]="getText()"></span>
+        <span class="showMore" *ngIf="isThereMore && !showMore" (click)="showMore=true"> {{'reviews.more' | translate}}</span>
+        <span class="showMore" *ngIf="isThereMore && showMore" (click)="showMore=false"> {{'reviews.less' | translate}}</span>
     </div>
 </div>
